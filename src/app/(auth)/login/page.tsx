@@ -14,10 +14,10 @@ interface DemoUser {
 }
 
 const DEMO_ACCOUNTS: DemoUser[] = [
-  { username: 'admin', name: 'ผู้ดูแลระบบ', role: 'SUPER_ADMIN', badge: 'ผู้ดูแลสูงสุด' },
-  { username: 'somchai', name: 'สมชาย เจ้าของโครงการ', role: 'PROJECT_OWNER', badge: 'ผู้ยื่นโครงการ' },
-  { username: 'reviewer1', name: 'วิชัย ผู้ตรวจสอบ', role: 'REVIEWER', badge: 'ผู้ตรวจสอบ' },
-  { username: 'approver1', name: 'ประเสริฐ ผู้อนุมัติ', role: 'APPROVER', badge: 'ผู้อนุมัติ' },
+  { username: 'admin', name: 'สมชาย รักชาติ (ผอ.ศูนย์ไอซีที)', role: 'SUPER_ADMIN', badge: 'ผู้ดูแลสูงสุด' },
+  { username: 'somchai', name: 'สมศักดิ์ สว่างวงศ์ (ผอ.กลุ่มแรงงานนอกระบบ)', role: 'PROJECT_OWNER', badge: 'ผู้ยื่นโครงการ' },
+  { username: 'reviewer1', name: 'สุชาติ ประเสริฐ (กรรมการกลั่นกรอง)', role: 'REVIEWER', badge: 'ผู้ตรวจสอบ' },
+  { username: 'approver1', name: 'กิตติ ยิ่งใหญ่ (รองปลัดฯ / CIO)', role: 'APPROVER', badge: 'ผู้อนุมัติ' },
 ];
 
 export default function LoginPage() {
@@ -43,7 +43,7 @@ export default function LoginPage() {
       const data = await res.json();
 
       if (!res.ok) {
-        throw new Error(data.message || 'ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง');
+        throw new Error(data.message || data.error?.message || 'ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง');
       }
 
       toast.success('เข้าสู่ระบบสำเร็จ');

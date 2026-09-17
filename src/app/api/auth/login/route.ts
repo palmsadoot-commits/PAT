@@ -23,6 +23,12 @@ export async function POST(req: NextRequest) {
     let targetUsername = username.trim().toLowerCase();
     if (targetUsername === 'admin') targetUsername = 'admin1';
     if (targetUsername === 'somchai') targetUsername = 'owner1';
+    if (targetUsername === 'owner') targetUsername = 'owner1';
+    if (targetUsername === 'reviewer') targetUsername = 'reviewer1';
+    if (targetUsername === 'approver') targetUsername = 'approver1';
+    if (targetUsername === 'officer') targetUsername = 'officer1';
+    if (targetUsername === 'executive' || targetUsername === 'executive1' || targetUsername === 'exec') targetUsername = 'exec1';
+    if (targetUsername === 'viewer') targetUsername = 'viewer1';
 
     const userMatch = rawUsers.find(
       (u: any) => u.username.toLowerCase() === targetUsername || u.username.toLowerCase() === username.trim().toLowerCase()
