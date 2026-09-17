@@ -9,22 +9,7 @@ import {
 } from '@/lib/utils/api-response';
 import { ProjectDPMLifecycle } from '@/types';
 
-const DPM_DATA_PATH = path.join(process.cwd(), 'data', 'dpm-data.json');
-
-function getDpmData(): Record<string, ProjectDPMLifecycle> {
-  try {
-    if (fs.existsSync(DPM_DATA_PATH)) {
-      return JSON.parse(fs.readFileSync(DPM_DATA_PATH, 'utf-8'));
-    }
-  } catch (err) {
-    console.error('Error reading dpm-data.json:', err);
-  }
-  return {};
-}
-
-function saveDpmData(data: Record<string, ProjectDPMLifecycle>) {
-  fs.writeFileSync(DPM_DATA_PATH, JSON.stringify(data, null, 2), 'utf-8');
-}
+import { getDpmData, saveDpmData } from '@/lib/storage/dpm-store';
 
 export async function GET(
   req: NextRequest,

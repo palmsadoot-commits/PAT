@@ -8,8 +8,8 @@ import {
 } from '@/lib/utils/api-response';
 import { ProjectDPMLifecycle, Project } from '@/types';
 
-const DPM_DATA_PATH = path.join(process.cwd(), 'data', 'dpm-data.json');
-const PROJECTS_PATH = path.join(process.cwd(), 'data', 'projects.json');
+import { getDpmData } from '@/lib/storage/dpm-store';
+import { getStorage, COLLECTIONS } from '@/lib/storage/factory';
 
 export async function GET(req: NextRequest) {
   try {
@@ -18,15 +18,9 @@ export async function GET(req: NextRequest) {
       return unauthorizedResponse('กรุณาเข้าสู่ระบบ');
     }
 
-    let dpmMap: Record<string, ProjectDPMLifecycle> = {};
-    if (fs.existsSync(DPM_DATA_PATH)) {
-      dpmMap = JSON.parse(fs.readFileSync(DPM_DATA_PATH, 'utf-8'));
-    }
-
-    let projects: Project[] = [];
-    if (fs.existsSync(PROJECTS_PATH)) {
-      projects = JSON.parse(fs.readFileSync(PROJECTS_PATH, 'utf-8'));
-    }
+    const dpmMap = getDpmData();
+    const storage = getStorage();
+    const projects = await storage.get<Project>(COLLECTIONS.PROJECTS);
 
     // Portfolio metrics
     const totalProjects = projects.length;

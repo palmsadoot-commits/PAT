@@ -84,16 +84,9 @@ export async function GET(
       }));
 
     // Read DPM Lifecycle data if available
-    let dpm = null;
-    const dpmPath = path.join(process.cwd(), 'data', 'dpm-data.json');
-    if (fs.existsSync(dpmPath)) {
-      try {
-        const dpmAll = JSON.parse(fs.readFileSync(dpmPath, 'utf-8'));
-        dpm = dpmAll[project.id] || null;
-      } catch (e) {
-        console.error('Failed to parse dpm-data.json', e);
-      }
-    }
+    const { getDpmData } = await import('@/lib/storage/dpm-store');
+    const dpmAll = getDpmData();
+    const dpm = dpmAll[project.id] || null;
 
     const fullDetail = {
       ...project,

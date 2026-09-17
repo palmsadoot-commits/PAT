@@ -6,7 +6,7 @@ import { successResponse, errorResponse } from '@/lib/utils/api-response';
 import { Project, Organization, ProjectHistory, ProjectDPMLifecycle, User } from '@/types';
 import { PROJECT_STATUS_LABELS } from '@/lib/utils/constants';
 
-const DPM_DATA_PATH = path.join(process.cwd(), 'data', 'dpm-data.json');
+import { getDpmData } from '@/lib/storage/dpm-store';
 
 export async function GET(req: NextRequest) {
   try {
@@ -19,10 +19,7 @@ export async function GET(req: NextRequest) {
       storage.get<User>(COLLECTIONS.USERS),
     ]);
 
-    let dpmMap: Record<string, ProjectDPMLifecycle> = {};
-    if (fs.existsSync(DPM_DATA_PATH)) {
-      dpmMap = JSON.parse(fs.readFileSync(DPM_DATA_PATH, 'utf-8'));
-    }
+    const dpmMap = getDpmData();
 
     const activeProjects = allProjects.filter((p) => !p.isDeleted);
 

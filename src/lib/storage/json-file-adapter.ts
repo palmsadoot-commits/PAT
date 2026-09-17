@@ -1,48 +1,66 @@
 import { promises as fs } from 'fs';
 import path from 'path';
+import os from 'os';
 import { StorageAdapter, StorageResult, ConflictError, NotFoundError } from './adapter';
 import { ListOptions, PaginationMeta } from '@/types';
 
+// Global in-memory cache shared across requests in the warm serverless container
+const globalMemoryStore = new Map<string, unknown[]>();
+
 /**
- * JSON File Adapter for local development
- * Reads and writes JSON files from the /data directory
+ * JSON File Adapter for development and serverless deployment
+ * Uses hybrid storage: In-memory + Writable /tmp (Vercel) + Bundled Seed Data
  */
 export class JsonFileAdapter implements StorageAdapter {
-  private dataDir: string;
-  private cache: Map<string, { data: unknown[]; timestamp: number }> = new Map();
-  private cacheTTL = 5000; // 5 seconds cache TTL for dev
+  private seedDir: string;
+  private writableDir: string;
 
-  constructor(dataDir?: string) {
-    this.dataDir = dataDir || path.join(process.cwd(), 'data');
+  constructor(seedDir?: string, writableDir?: string) {
+    this.seedDir = seedDir || path.join(process.cwd(), 'data');
+    
+    // In Vercel serverless / AWS Lambda, use os.tmpdir() for writes
+    if (process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME) {
+      this.writableDir = writableDir || path.join(os.tmpdir(), 'pat-data');
+    } else {
+      this.writableDir = writableDir || this.seedDir;
+    }
   }
 
-  private getFilePath(collection: string): string {
-    return path.join(this.dataDir, `${collection}.json`);
+  private getSeedPath(collection: string): string {
+    return path.join(this.seedDir, `${collection}.json`);
   }
 
-  private isCacheValid(collection: string): boolean {
-    const cached = this.cache.get(collection);
-    if (!cached) return false;
-    return Date.now() - cached.timestamp < this.cacheTTL;
-  }
-
-  private invalidateCache(collection: string): void {
-    this.cache.delete(collection);
+  private getWritablePath(collection: string): string {
+    return path.join(this.writableDir, `${collection}.json`);
   }
 
   async get<T>(collection: string): Promise<T[]> {
-    if (this.isCacheValid(collection)) {
-      return this.cache.get(collection)!.data as T[];
+    // 1. Check in-memory store
+    if (globalMemoryStore.has(collection)) {
+      return globalMemoryStore.get(collection) as T[];
     }
 
-    const filePath = this.getFilePath(collection);
+    // 2. Check writable directory (if previously written in /tmp)
+    const writablePath = this.getWritablePath(collection);
     try {
-      const content = await fs.readFile(filePath, 'utf-8');
+      const content = await fs.readFile(writablePath, 'utf-8');
       const data = JSON.parse(content) as T[];
-      this.cache.set(collection, { data, timestamp: Date.now() });
+      globalMemoryStore.set(collection, data as unknown[]);
+      return data;
+    } catch {
+      // Not in writable dir yet, proceed to seed
+    }
+
+    // 3. Read bundled seed data
+    const seedPath = this.getSeedPath(collection);
+    try {
+      const content = await fs.readFile(seedPath, 'utf-8');
+      const data = JSON.parse(content) as T[];
+      globalMemoryStore.set(collection, data as unknown[]);
       return data;
     } catch (error: unknown) {
       if (error && typeof error === 'object' && 'code' in error && (error as { code: string }).code === 'ENOENT') {
+        globalMemoryStore.set(collection, []);
         return [];
       }
       throw error;
@@ -119,8 +137,8 @@ export class JsonFileAdapter implements StorageAdapter {
 
   async create<T extends { id: string }>(collection: string, data: T): Promise<T> {
     const allData = await this.get<T>(collection);
-    allData.push(data);
-    await this.writeFile(collection, allData);
+    const updatedData = [...allData, data];
+    await this.writeFile(collection, updatedData);
     return data;
   }
 
@@ -146,11 +164,12 @@ export class JsonFileAdapter implements StorageAdapter {
       ...existing,
       ...updates,
       id: existing.id, // Prevent ID change
-      version: existing.version + 1,
+      version: (existing.version || 1) + 1,
     };
 
-    allData[index] = updated;
-    await this.writeFile(collection, allData);
+    const updatedData = [...allData];
+    updatedData[index] = updated;
+    await this.writeFile(collection, updatedData);
     return updated;
   }
 
@@ -162,47 +181,67 @@ export class JsonFileAdapter implements StorageAdapter {
       throw new NotFoundError(collection, id);
     }
 
-    allData[index] = {
-      ...allData[index],
+    const updatedData = [...allData];
+    updatedData[index] = {
+      ...updatedData[index],
       isDeleted: true,
       deletedAt: new Date().toISOString(),
       deletedBy,
     };
 
-    await this.writeFile(collection, allData);
+    await this.writeFile(collection, updatedData);
   }
 
   async bulkUpdate<T extends { id: string }>(collection: string, items: T[]): Promise<T[]> {
     const allData = await this.get<T>(collection);
+    const updatedData = [...allData];
     const updatedItems: T[] = [];
 
     for (const item of items) {
-      const index = allData.findIndex((d) => d.id === item.id);
+      const index = updatedData.findIndex((d) => (d as any).id === item.id);
       if (index !== -1) {
-        allData[index] = { ...allData[index], ...item };
-        updatedItems.push(allData[index]);
+        updatedData[index] = { ...updatedData[index], ...item };
+        updatedItems.push(updatedData[index] as T);
       }
     }
 
-    await this.writeFile(collection, allData);
+    await this.writeFile(collection, updatedData);
     return updatedItems;
   }
 
   async append<T>(collection: string, data: T): Promise<T> {
     const allData = await this.get<T>(collection);
-    allData.push(data);
-    await this.writeFile(collection, allData);
+    const updatedData = [...allData, data];
+    await this.writeFile(collection, updatedData);
     return data;
   }
 
   async replace<T>(collection: string, data: T[]): Promise<void> {
-    await this.writeFile(collection, data);
+    await this.writeFile(collection, [...data]);
   }
 
   private async writeFile(collection: string, data: unknown[]): Promise<void> {
-    const filePath = this.getFilePath(collection);
-    await fs.mkdir(path.dirname(filePath), { recursive: true });
-    await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf-8');
-    this.invalidateCache(collection);
+    // 1. Immediately update in-memory store so all queries in this instance see the new state
+    globalMemoryStore.set(collection, data);
+
+    // 2. Persist to disk
+    const targetPath = this.getWritablePath(collection);
+    try {
+      await fs.mkdir(path.dirname(targetPath), { recursive: true });
+      await fs.writeFile(targetPath, JSON.stringify(data, null, 2), 'utf-8');
+    } catch (err: any) {
+      // If writing to repo directory failed with EROFS or permission error (e.g. Vercel serverless)
+      if (err?.code === 'EROFS' || err?.code === 'EACCES') {
+        const tmpPath = path.join(os.tmpdir(), 'pat-data', `${collection}.json`);
+        try {
+          await fs.mkdir(path.dirname(tmpPath), { recursive: true });
+          await fs.writeFile(tmpPath, JSON.stringify(data, null, 2), 'utf-8');
+        } catch (tmpErr) {
+          console.warn(`[JsonFileAdapter] Failed fallback write to /tmp for "${collection}":`, tmpErr);
+        }
+      } else {
+        console.warn(`[JsonFileAdapter] Write warning for "${collection}":`, err);
+      }
+    }
   }
 }
