@@ -1,0 +1,332 @@
+[
+  {
+    "id": "NTF-001",
+    "userId": "USR-004",
+    "type": "NEW_SUBMISSION",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "โครงการพัฒนาระบบบริการดิจิทัล ถูกส่งเข้ามา",
+    "linkUrl": "/projects/PRJ-2569-0005",
+    "isRead": true,
+    "createdAt": "2026-01-14T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-002",
+    "userId": "USR-005",
+    "type": "NEW_SUBMISSION",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "โครงการพัฒนาระบบเครือข่าย ถูกส่งเข้ามา",
+    "linkUrl": "/projects/PRJ-2569-0006",
+    "isRead": false,
+    "createdAt": "2026-01-15T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-003",
+    "userId": "USR-006",
+    "type": "NEW_SUBMISSION",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "โครงการพัฒนาระบบสารสนเทศทรัพยากรบุคคล ถูกส่งเข้ามา",
+    "linkUrl": "/projects/PRJ-2569-0007",
+    "isRead": true,
+    "createdAt": "2026-01-16T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-004",
+    "userId": "USR-004",
+    "type": "NEW_SUBMISSION",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "โครงการประเมินผลความคุ้มค่า ถูกส่งเข้ามา",
+    "linkUrl": "/projects/PRJ-2569-0008",
+    "isRead": false,
+    "createdAt": "2026-01-17T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-005",
+    "userId": "USR-005",
+    "type": "NEW_SUBMISSION",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "โครงการส่งเสริมความปลอดภัย ถูกส่งเข้ามา",
+    "linkUrl": "/projects/PRJ-2569-0009",
+    "isRead": true,
+    "createdAt": "2026-01-18T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-006",
+    "userId": "USR-009",
+    "type": "RETURNED",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "โครงการพัฒนาระบบคลังข้อมูล ของคุณถูกส่งกลับ",
+    "linkUrl": "/projects/PRJ-2569-0016",
+    "isRead": false,
+    "createdAt": "2026-01-27T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-007",
+    "userId": "USR-007",
+    "type": "RETURNED",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "โครงการปรับปรุงประสิทธิภาพการทำงาน ของคุณถูกส่งกลับ",
+    "linkUrl": "/projects/PRJ-2569-0017",
+    "isRead": true,
+    "createdAt": "2026-01-29T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-008",
+    "userId": "USR-008",
+    "type": "RETURNED",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "โครงการสำรวจความต้องการแรงงาน ของคุณถูกส่งกลับ",
+    "linkUrl": "/projects/PRJ-2569-0018",
+    "isRead": false,
+    "createdAt": "2026-01-30T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-009",
+    "userId": "USR-010",
+    "type": "NEEDS_REVIEW",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "มีโครงการสัมมนาเชิงปฏิบัติการ รอการตรวจสอบ",
+    "linkUrl": "/projects/PRJ-2569-0012",
+    "isRead": true,
+    "createdAt": "2026-01-25T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-010",
+    "userId": "USR-011",
+    "type": "NEEDS_REVIEW",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "มีโครงการทดสอบมาตรฐานฝีมือแรงงาน รอการตรวจสอบ",
+    "linkUrl": "/projects/PRJ-2569-0013",
+    "isRead": true,
+    "createdAt": "2026-01-26T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-011",
+    "userId": "USR-010",
+    "type": "NEEDS_REVIEW",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "มีโครงการจัดซื้อระบบเครือข่าย รอการตรวจสอบ",
+    "linkUrl": "/projects/PRJ-2569-0014",
+    "isRead": false,
+    "createdAt": "2026-01-27T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-012",
+    "userId": "USR-011",
+    "type": "NEEDS_REVIEW",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "มีโครงการจ้างที่ปรึกษาระบบงาน รอการตรวจสอบ",
+    "linkUrl": "/projects/PRJ-2569-0015",
+    "isRead": true,
+    "createdAt": "2026-01-28T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-013",
+    "userId": "USR-012",
+    "type": "PENDING_APPROVAL",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "มีโครงการพัฒนาทักษะด้านภาษา รอการอนุมัติ",
+    "linkUrl": "/projects/PRJ-2569-0019",
+    "isRead": false,
+    "createdAt": "2026-02-05T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-014",
+    "userId": "USR-013",
+    "type": "PENDING_APPROVAL",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "มีโครงการพัฒนาระบบ e-Service รอการอนุมัติ",
+    "linkUrl": "/projects/PRJ-2569-0020",
+    "isRead": true,
+    "createdAt": "2026-02-06T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-015",
+    "userId": "USR-012",
+    "type": "PENDING_APPROVAL",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "มีโครงการศูนย์การเรียนรู้ รอการอนุมัติ",
+    "linkUrl": "/projects/PRJ-2569-0021",
+    "isRead": true,
+    "createdAt": "2026-02-08T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-016",
+    "userId": "USR-013",
+    "type": "PENDING_APPROVAL",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "มีโครงการจัดซื้อรถยนต์ส่วนกลาง รอการอนุมัติ",
+    "linkUrl": "/projects/PRJ-2569-0022",
+    "isRead": false,
+    "createdAt": "2026-02-09T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-017",
+    "userId": "USR-008",
+    "type": "APPROVED",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "โครงการยกระดับคุณภาพชีวิตแรงงาน ของคุณได้รับการอนุมัติแล้ว",
+    "linkUrl": "/projects/PRJ-2569-0024",
+    "isRead": true,
+    "createdAt": "2026-02-10T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-018",
+    "userId": "USR-009",
+    "type": "APPROVED",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "โครงการพัฒนาระบบเบิกจ่าย ของคุณได้รับการอนุมัติแล้ว",
+    "linkUrl": "/projects/PRJ-2569-0025",
+    "isRead": true,
+    "createdAt": "2026-02-11T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-019",
+    "userId": "USR-007",
+    "type": "APPROVED",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "โครงการปรับปรุงภูมิทัศน์ ของคุณได้รับการอนุมัติแล้ว",
+    "linkUrl": "/projects/PRJ-2569-0026",
+    "isRead": false,
+    "createdAt": "2026-02-12T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-020",
+    "userId": "USR-008",
+    "type": "APPROVED",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "โครงการประเมินความเสี่ยง ของคุณได้รับการอนุมัติแล้ว",
+    "linkUrl": "/projects/PRJ-2569-0027",
+    "isRead": true,
+    "createdAt": "2026-02-13T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-021",
+    "userId": "USR-007",
+    "type": "REJECTED",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "โครงการจัดซื้อคอมพิวเตอร์ ของคุณไม่ได้รับการอนุมัติ",
+    "linkUrl": "/projects/PRJ-2569-0029",
+    "isRead": false,
+    "createdAt": "2026-02-15T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-022",
+    "userId": "USR-008",
+    "type": "REJECTED",
+    "title": "มีการอัปเดตสถานะโครงการ",
+    "message": "โครงการฝึกอบรมต่างประเทศ ของคุณไม่ได้รับการอนุมัติ",
+    "linkUrl": "/projects/PRJ-2569-0030",
+    "isRead": true,
+    "createdAt": "2026-02-16T10:05:00+07:00"
+  },
+  {
+    "id": "NTF-023",
+    "userId": "USR-004",
+    "type": "SLA_WARNING",
+    "title": "เตือน SLA",
+    "message": "โครงการสัมมนาเชิงปฏิบัติการ ใกล้เกินกำหนดเวลาตรวจสอบ",
+    "linkUrl": "/projects/PRJ-2569-0012",
+    "isRead": true,
+    "createdAt": "2026-01-24T10:00:00+07:00"
+  },
+  {
+    "id": "NTF-024",
+    "userId": "USR-010",
+    "type": "SLA_WARNING",
+    "title": "เตือน SLA",
+    "message": "โครงการทดสอบมาตรฐานฝีมือแรงงาน ใกล้เกินกำหนดเวลาพิจารณา",
+    "linkUrl": "/projects/PRJ-2569-0013",
+    "isRead": false,
+    "createdAt": "2026-01-25T10:00:00+07:00"
+  },
+  {
+    "id": "NTF-025",
+    "userId": "USR-012",
+    "type": "SLA_WARNING",
+    "title": "เตือน SLA",
+    "message": "โครงการพัฒนาทักษะด้านภาษา ใกล้เกินกำหนดเวลาอนุมัติ",
+    "linkUrl": "/projects/PRJ-2569-0019",
+    "isRead": true,
+    "createdAt": "2026-02-07T10:00:00+07:00"
+  },
+  {
+    "id": "NTF-026",
+    "userId": "USR-005",
+    "type": "SLA_BREACH",
+    "title": "เตือน SLA เกินกำหนด",
+    "message": "โครงการจัดซื้อระบบเครือข่าย เกินกำหนดเวลาตรวจสอบ",
+    "linkUrl": "/projects/PRJ-2569-0014",
+    "isRead": true,
+    "createdAt": "2026-01-28T10:00:00+07:00"
+  },
+  {
+    "id": "NTF-027",
+    "userId": "USR-011",
+    "type": "SLA_BREACH",
+    "title": "เตือน SLA เกินกำหนด",
+    "message": "โครงการจ้างที่ปรึกษาระบบงาน เกินกำหนดเวลาพิจารณา",
+    "linkUrl": "/projects/PRJ-2569-0015",
+    "isRead": false,
+    "createdAt": "2026-01-30T10:00:00+07:00"
+  },
+  {
+    "id": "NTF-028",
+    "userId": "USR-008",
+    "type": "NEW_COMMENT",
+    "title": "ความคิดเห็นใหม่",
+    "message": "มีความคิดเห็นใหม่ในโครงการสัมมนาเชิงปฏิบัติการ",
+    "linkUrl": "/projects/PRJ-2569-0012",
+    "isRead": true,
+    "createdAt": "2026-01-25T14:35:00+07:00"
+  },
+  {
+    "id": "NTF-029",
+    "userId": "USR-009",
+    "type": "NEW_COMMENT",
+    "title": "ความคิดเห็นใหม่",
+    "message": "มีความคิดเห็นใหม่ในโครงการทดสอบมาตรฐานฝีมือแรงงาน",
+    "linkUrl": "/projects/PRJ-2569-0013",
+    "isRead": true,
+    "createdAt": "2026-01-22T16:50:00+07:00"
+  },
+  {
+    "id": "NTF-030",
+    "userId": "USR-007",
+    "type": "NEW_COMMENT",
+    "title": "ความคิดเห็นใหม่",
+    "message": "มีความคิดเห็นใหม่ในโครงการจัดซื้อระบบเครือข่าย",
+    "linkUrl": "/projects/PRJ-2569-0014",
+    "isRead": false,
+    "createdAt": "2026-01-24T10:35:00+07:00"
+  },
+  {
+    "id": "NTF-1789533293762-025",
+    "userId": "USR-009",
+    "type": "NEEDS_REVIEW",
+    "title": "สถานะโครงการ MOL-2569-028 มีการเปลี่ยนแปลง",
+    "message": "โครงการเปลี่ยนสถานะเป็น \"เริ่มดำเนินการ\" โดย USR-001",
+    "projectId": "PRJ-2569-0028",
+    "isRead": false,
+    "createdAt": "2026-09-16T11:34:53.762+07:00"
+  },
+  {
+    "id": "NTF-1789539446390-359",
+    "userId": "USR-001",
+    "type": "NEW_SUBMISSION",
+    "title": "ได้รับมอบหมายโครงการใหม่",
+    "message": "คุณได้รับมอบหมายให้เป็นผู้รับผิดชอบโครงการ \"โครงการพัฒนาระบบบริการดิจิทัล\" (MOL-2569-001)",
+    "projectId": "PRJ-2569-0001",
+    "isRead": false,
+    "createdAt": "2026-09-16T13:17:26.390+07:00"
+  },
+  {
+    "id": "NTF-1789613661120-952",
+    "userId": "USR-009",
+    "type": "NEEDS_REVIEW",
+    "title": "สถานะโครงการ MOL-2569-028 มีการเปลี่ยนแปลง",
+    "message": "โครงการเปลี่ยนสถานะเป็น \"เสร็จสิ้น\" โดย USR-001",
+    "projectId": "PRJ-2569-0028",
+    "isRead": false,
+    "createdAt": "2026-09-17T09:54:21.120+07:00"
+  }
+]

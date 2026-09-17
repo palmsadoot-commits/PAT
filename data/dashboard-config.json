@@ -1,0 +1,9 @@
+{
+  "layout": "DEFAULT",
+  "widgets": [
+    { "id": "W-01", "type": "CARD", "title": "โครงการทั้งหมด", "dataSource": "PROJECT_COUNT", "size": "SMALL" },
+    { "id": "W-02", "type": "CHART_PIE", "title": "สถานะโครงการ", "dataSource": "PROJECTS_BY_STATUS", "size": "MEDIUM" },
+    { "id": "W-03", "type": "CHART_BAR", "title": "งบประมาณตามกรม", "dataSource": "BUDGET_BY_DEPT", "size": "LARGE" },
+    { "id": "W-04", "type": "TABLE", "title": "โครงการรออนุมัติ", "dataSource": "PENDING_APPROVAL_LIST", "size": "LARGE" }
+  ]
+}

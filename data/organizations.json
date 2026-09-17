@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ORG-001",
+    "name": "ศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร",
+    "nameEn": "Information and Communication Technology Center",
+    "shortName": "ศสช.",
+    "code": "ICT",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "ORG-002",
+    "name": "กองยุทธศาสตร์และแผนงาน",
+    "nameEn": "Strategy and Planning Division",
+    "shortName": "กยผ.",
+    "code": "SPD",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "ORG-003",
+    "name": "กองบริหารการคลัง",
+    "nameEn": "Financial Management Division",
+    "shortName": "กบค.",
+    "code": "FMD",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "ORG-004",
+    "name": "กองบริหารทรัพยากรบุคคล",
+    "nameEn": "Human Resource Management Division",
+    "shortName": "กบห.",
+    "code": "HRD",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "ORG-005",
+    "name": "กองเศรษฐกิจการแรงงาน",
+    "nameEn": "Labour Economics Division",
+    "shortName": "กศร.",
+    "code": "LED",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "ORG-006",
+    "name": "กองกฎหมาย",
+    "nameEn": "Legal Affairs Division",
+    "shortName": "กกม.",
+    "code": "LAD",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "ORG-007",
+    "name": "สำนักตรวจและประเมินผล",
+    "nameEn": "Inspection and Evaluation Bureau",
+    "shortName": "สตป.",
+    "code": "IEB",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "ORG-008",
+    "name": "สำนักประสานความร่วมมือระหว่างประเทศ",
+    "nameEn": "Bureau of International Cooperation",
+    "shortName": "สมป.",
+    "code": "BIC",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "ORG-009",
+    "name": "สำนักงานนโยบายแรงงานนอกระบบ",
+    "nameEn": "Informal Labour Policy Bureau",
+    "shortName": "สนร.",
+    "code": "ILP",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "ORG-010",
+    "name": "กองกลาง",
+    "nameEn": "General Affairs Division",
+    "shortName": "กก.",
+    "code": "GAD",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "ORG-011",
+    "name": "กองเผยแพร่และประชาสัมพันธ์",
+    "nameEn": "Public Relations Division",
+    "shortName": "กผป.",
+    "code": "PRD",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "ORG-012",
+    "name": "สำนักงานแรงงานจังหวัด (76 จังหวัด)",
+    "nameEn": "Provincial Labour Offices",
+    "shortName": "สรง.จ.",
+    "code": "PLO",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  }
+]

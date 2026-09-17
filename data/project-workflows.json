@@ -1,0 +1,14 @@
+[
+  { "from": "DRAFT", "to": "SUBMITTED", "action": "SUBMIT", "requiredRole": ["PROJECT_OWNER", "ADMIN"], "requiresComment": false },
+  { "from": "SUBMITTED", "to": "DOCUMENT_CHECK", "action": "ACKNOWLEDGE", "requiredRole": ["OFFICER", "ADMIN"], "requiresComment": false },
+  { "from": "DOCUMENT_CHECK", "to": "UNDER_REVIEW", "action": "PROCEED", "requiredRole": ["OFFICER", "ADMIN"], "requiresComment": false },
+  { "from": "DOCUMENT_CHECK", "to": "RETURNED", "action": "RETURN", "requiredRole": ["OFFICER", "ADMIN"], "requiresComment": true },
+  { "from": "RETURNED", "to": "SUBMITTED", "action": "RESUBMIT", "requiredRole": ["PROJECT_OWNER", "ADMIN"], "requiresComment": false },
+  { "from": "UNDER_REVIEW", "to": "PENDING_APPROVAL", "action": "RECOMMEND", "requiredRole": ["REVIEWER", "ADMIN"], "requiresComment": false },
+  { "from": "UNDER_REVIEW", "to": "RETURNED", "action": "RETURN", "requiredRole": ["REVIEWER", "ADMIN"], "requiresComment": true },
+  { "from": "PENDING_APPROVAL", "to": "APPROVED", "action": "APPROVE", "requiredRole": ["APPROVER", "EXECUTIVE", "ADMIN"], "requiresComment": false },
+  { "from": "PENDING_APPROVAL", "to": "REJECTED", "action": "REJECT", "requiredRole": ["APPROVER", "EXECUTIVE", "ADMIN"], "requiresComment": true },
+  { "from": "APPROVED", "to": "IN_PROGRESS", "action": "START", "requiredRole": ["PROJECT_OWNER", "ADMIN"], "requiresComment": false },
+  { "from": "IN_PROGRESS", "to": "COMPLETED", "action": "COMPLETE", "requiredRole": ["PROJECT_OWNER", "ADMIN"], "requiresComment": false },
+  { "from": "IN_PROGRESS", "to": "CANCELLED", "action": "CANCEL", "requiredRole": ["PROJECT_OWNER", "ADMIN"], "requiresComment": true }
+]

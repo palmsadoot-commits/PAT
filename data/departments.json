@@ -1,0 +1,332 @@
+[
+  {
+    "id": "DEP-001",
+    "orgId": "ORG-001",
+    "organizationId": "ORG-001",
+    "name": "กลุ่มงานพัฒนาระบบงานคอมพิวเตอร์",
+    "nameEn": "Computer System Development Section",
+    "code": "CSD",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-002",
+    "orgId": "ORG-001",
+    "organizationId": "ORG-001",
+    "name": "กลุ่มงานบริหารคอมพิวเตอร์และเครือข่าย",
+    "nameEn": "Network & Computer Administration Section",
+    "code": "NCA",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-003",
+    "orgId": "ORG-001",
+    "organizationId": "ORG-001",
+    "name": "กลุ่มงานวางแผนเทคโนโลยีสารสนเทศ",
+    "nameEn": "IT Planning Section",
+    "code": "ITP",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-004",
+    "orgId": "ORG-001",
+    "organizationId": "ORG-001",
+    "name": "ฝ่ายบริหารทั่วไป",
+    "nameEn": "General Administration Section",
+    "code": "GAD-ICT",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-005",
+    "orgId": "ORG-002",
+    "organizationId": "ORG-002",
+    "name": "กลุ่มงานพัฒนายุทธศาสตร์",
+    "nameEn": "Strategy Development Section",
+    "code": "SDS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-006",
+    "orgId": "ORG-002",
+    "organizationId": "ORG-002",
+    "name": "กลุ่มงานแผนงานและงบประมาณ",
+    "nameEn": "Planning & Budgeting Section",
+    "code": "PBS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-007",
+    "orgId": "ORG-002",
+    "organizationId": "ORG-002",
+    "name": "สำนักงานสภาที่ปรึกษาเพื่อพัฒนาแรงงานแห่งชาติ",
+    "nameEn": "Office of National Labour Advisory Council",
+    "code": "NLAC",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-008",
+    "orgId": "ORG-002",
+    "organizationId": "ORG-002",
+    "name": "ฝ่ายบริหารทั่วไป",
+    "nameEn": "General Administration Section",
+    "code": "GAD-SPD",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-009",
+    "orgId": "ORG-003",
+    "organizationId": "ORG-003",
+    "name": "กลุ่มงานพัสดุ",
+    "nameEn": "Procurement & Supplies Section",
+    "code": "PSS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-010",
+    "orgId": "ORG-003",
+    "organizationId": "ORG-003",
+    "name": "กลุ่มงานงบประมาณ",
+    "nameEn": "Budgeting Section",
+    "code": "BGS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-011",
+    "orgId": "ORG-003",
+    "organizationId": "ORG-003",
+    "name": "กลุ่มงานการเงินและบัญชี",
+    "nameEn": "Finance & Accounts Section",
+    "code": "FAS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-012",
+    "orgId": "ORG-003",
+    "organizationId": "ORG-003",
+    "name": "งานบริหารทั่วไป",
+    "nameEn": "General Administration Section",
+    "code": "GAD-FMD",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-013",
+    "orgId": "ORG-004",
+    "organizationId": "ORG-004",
+    "name": "กลุ่มงานพัฒนาทรัพยากรบุคคล",
+    "nameEn": "HR Development Section",
+    "code": "HRDS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-014",
+    "orgId": "ORG-004",
+    "organizationId": "ORG-004",
+    "name": "กลุ่มงานสรรหาและบรรจุแต่งตั้ง",
+    "nameEn": "Recruitment & Placement Section",
+    "code": "RPS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-015",
+    "orgId": "ORG-004",
+    "organizationId": "ORG-004",
+    "name": "กลุ่มงานอัตรากำลังและวินัย",
+    "nameEn": "Workforce & Discipline Section",
+    "code": "WDS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-016",
+    "orgId": "ORG-005",
+    "organizationId": "ORG-005",
+    "name": "ศูนย์วิจัยและนวัตกรรมแรงงาน",
+    "nameEn": "Labour Research & Innovation Center",
+    "code": "LRIC",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-017",
+    "orgId": "ORG-005",
+    "organizationId": "ORG-005",
+    "name": "สำนักงานคณะกรรมการค่าจ้าง",
+    "nameEn": "Office of Wage Committee",
+    "code": "OWC",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-018",
+    "orgId": "ORG-005",
+    "organizationId": "ORG-005",
+    "name": "กลุ่มงานนโยบายเศรษฐกิจแรงงานมหภาค",
+    "nameEn": "Macroeconomic Labour Policy Section",
+    "code": "MLP",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-019",
+    "orgId": "ORG-006",
+    "organizationId": "ORG-006",
+    "name": "กลุ่มงานพัฒนากฎหมาย",
+    "nameEn": "Legal Development Section",
+    "code": "LDS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-020",
+    "orgId": "ORG-006",
+    "organizationId": "ORG-006",
+    "name": "กลุ่มงานคดีและนิติกรรมสัญญา",
+    "nameEn": "Litigation & Legal Contract Section",
+    "code": "LLCS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-021",
+    "orgId": "ORG-007",
+    "organizationId": "ORG-007",
+    "name": "กลุ่มงานตรวจราชการ",
+    "nameEn": "Inspection Section",
+    "code": "INS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-022",
+    "orgId": "ORG-007",
+    "organizationId": "ORG-007",
+    "name": "กลุ่มงานวิเคราะห์และประเมินผล",
+    "nameEn": "Analysis & Evaluation Section",
+    "code": "AES",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-023",
+    "orgId": "ORG-007",
+    "organizationId": "ORG-007",
+    "name": "ศูนย์บริการประชาชนกระทรวงแรงงาน",
+    "nameEn": "Citizen Service Center",
+    "code": "CSC",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-024",
+    "orgId": "ORG-008",
+    "organizationId": "ORG-008",
+    "name": "กลุ่มงานวิเทศสัมพันธ์",
+    "nameEn": "Foreign Relations Section",
+    "code": "FRS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-025",
+    "orgId": "ORG-008",
+    "organizationId": "ORG-008",
+    "name": "กลุ่มงานความร่วมมืออาเซียน",
+    "nameEn": "ASEAN Cooperation Section",
+    "code": "ACS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-026",
+    "orgId": "ORG-009",
+    "organizationId": "ORG-009",
+    "name": "กลุ่มแรงงานนอกระบบ",
+    "nameEn": "Informal Labour Section",
+    "code": "ILS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-027",
+    "orgId": "ORG-009",
+    "organizationId": "ORG-009",
+    "name": "กลุ่มแรงงานสูงอายุและคนพิการ",
+    "nameEn": "Elderly & Disability Labour Section",
+    "code": "EDLS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-028",
+    "orgId": "ORG-010",
+    "organizationId": "ORG-010",
+    "name": "ฝ่ายสารบรรณและประสานราชการ",
+    "nameEn": "Correspondence & Coordination Section",
+    "code": "CCS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-029",
+    "orgId": "ORG-010",
+    "organizationId": "ORG-010",
+    "name": "กลุ่มงานช่วยอำนวยการ",
+    "nameEn": "Executive Assistance Section",
+    "code": "EAS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-030",
+    "orgId": "ORG-011",
+    "organizationId": "ORG-011",
+    "name": "กลุ่มงานสื่อสารองค์กรและดิจิทัลมีเดีย",
+    "nameEn": "Corporate Communication & Digital Media",
+    "code": "CCDM",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-031",
+    "orgId": "ORG-011",
+    "organizationId": "ORG-011",
+    "name": "กลุ่มงานโฆษกและการข่าว",
+    "nameEn": "Spokesperson & News Section",
+    "code": "SNS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-032",
+    "orgId": "ORG-012",
+    "organizationId": "ORG-012",
+    "name": "กลุ่มงานยุทธศาสตร์และข้อมูลสารสนเทศแรงงานจังหวัด",
+    "nameEn": "Provincial Strategy & Information Section",
+    "code": "PSIS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  },
+  {
+    "id": "DEP-033",
+    "orgId": "ORG-012",
+    "organizationId": "ORG-012",
+    "name": "ฝ่ายบริหารทั่วไปสำนักงานแรงงานจังหวัด",
+    "nameEn": "Provincial General Administration Section",
+    "code": "PGAS",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00+07:00"
+  }
+]

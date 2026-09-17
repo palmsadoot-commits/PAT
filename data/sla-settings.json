@@ -1,0 +1,5 @@
+[
+  { "status": "DOCUMENT_CHECK", "maxDays": 3, "warningDays": 1, "isActive": true },
+  { "status": "UNDER_REVIEW", "maxDays": 5, "warningDays": 2, "isActive": true },
+  { "status": "PENDING_APPROVAL", "maxDays": 3, "warningDays": 1, "isActive": true }
+]
