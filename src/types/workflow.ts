@@ -31,4 +31,6 @@ export interface ProjectHistory {
   actionAt?: string;
   comments?: string;
   performerName?: string;
+  performerPosition?: string;
+  performerRole?: string;
 }

@@ -68,12 +68,18 @@ export async function GET(
       .filter((h) => h.projectId === project.id)
       .sort((a, b) => new Date(a.performedAt).getTime() - new Date(b.performedAt).getTime());
 
-    // Map user names onto history
+    // Map user names and positions onto history
     const userMap = new Map(users.map((u) => [u.id, u.fullName || u.username]));
-    const enrichedHistory = history.map((h) => ({
-      ...h,
-      performerName: userMap.get(h.performedBy) || h.performedBy,
-    }));
+    const userObjMap = new Map(users.map((u) => [u.id, u]));
+    const enrichedHistory = history.map((h) => {
+      const u = userObjMap.get(h.performedBy);
+      return {
+        ...h,
+        performerName: u?.fullName || h.performerName || u?.username || h.performedBy,
+        performerPosition: u?.position || '',
+        performerRole: u?.role || '',
+      };
+    });
 
     const comments = allComments
       .filter((c) => c.projectId === project.id && !c.isDeleted)

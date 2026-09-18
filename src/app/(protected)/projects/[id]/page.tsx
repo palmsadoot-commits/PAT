@@ -266,6 +266,58 @@ export default function ProjectDetailPage() {
     h.toStatus === 'RETURNED' || h.toStatus === 'REJECTED'
   );
 
+  // Helper to find the executor / performer position for a completed workflow step
+  const getStepPerformer = (stepId: string) => {
+    if (!project) return null;
+    const historyList = (project.history || []) as any[];
+
+    if (stepId === 'draft') {
+      const h = historyList.find((h) => h.action === 'SUBMIT' || h.fromStatus === 'DRAFT');
+      return {
+        name: h?.performerName || project.ownerContact?.fullName || project.ownerName || '',
+        position: h?.performerPosition || project.ownerContact?.position || project.ownerPosition || 'เจ้าของโครงการ',
+      };
+    }
+
+    if (stepId === 'submitted') {
+      const h = historyList.find(
+        (h) => h.action === 'ACKNOWLEDGE' || h.action === 'RECEIVE' || h.fromStatus === 'SUBMITTED' || h.toStatus === 'DOCUMENT_CHECK'
+      );
+      return {
+        name: h?.performerName || project.assignedOfficer?.fullName || '',
+        position: h?.performerPosition || project.assignedOfficer?.position || 'เจ้าหน้าที่ตรวจสอบเอกสาร',
+      };
+    }
+
+    if (stepId === 'review') {
+      const h = historyList.find(
+        (h) => h.action === 'RECOMMEND' || h.action === 'REVIEW_COMPLETE' || h.fromStatus === 'UNDER_REVIEW' || h.toStatus === 'PENDING_APPROVAL'
+      );
+      return {
+        name: h?.performerName || project.assignedReviewer?.fullName || '',
+        position: h?.performerPosition || project.assignedReviewer?.position || 'กรรมการกลั่นกรองโครงการ',
+      };
+    }
+
+    if (stepId === 'approval') {
+      const h = historyList.find((h) => h.action === 'APPROVE' || h.toStatus === 'APPROVED');
+      return {
+        name: h?.performerName || project.assignedApprover?.fullName || '',
+        position: h?.performerPosition || project.assignedApprover?.position || 'ปลัดกระทรวงแรงงาน',
+      };
+    }
+
+    if (stepId === 'done') {
+      const h = historyList.find((h) => h.action === 'COMPLETE' || h.toStatus === 'COMPLETED');
+      return {
+        name: h?.performerName || project.assignedInspector?.fullName || '',
+        position: h?.performerPosition || project.assignedInspector?.position || 'ผู้ตรวจราชการกระทรวงแรงงาน',
+      };
+    }
+
+    return null;
+  };
+
   return (
     <div className="space-y-5 pb-16">
       {/* Top Back Navigation & Tools */}
@@ -426,7 +478,7 @@ export default function ProjectDetailPage() {
           </div>
           <span className="status-chip" style={{ color: statusInfo.color, backgroundColor: statusInfo.bg }}>{statusInfo.label}</span>
         </div>
-        <div className="flex items-center justify-between relative min-w-[540px] py-1">
+        <div className="flex items-start justify-between relative min-w-[540px] py-1">
           {/* Background baseline track */}
           <div className="absolute left-0 top-5 w-full h-[2px] bg-[var(--border-muted)] -z-10" />
           
@@ -437,8 +489,9 @@ export default function ProjectDetailPage() {
           />
           
           {WORKFLOW_STEPS.map((step, index) => {
-            const isCompleted = index < currentStepIndex;
-            const isCurrent = index === currentStepIndex;
+            const isCompleted = index < currentStepIndex || (index === WORKFLOW_STEPS.length - 1 && project.status === 'COMPLETED');
+            const isCurrent = index === currentStepIndex && project.status !== 'COMPLETED';
+            const stepPerformer = isCompleted ? getStepPerformer(step.id) : null;
 
             return (
               <div key={step.id} className="flex flex-col items-center gap-2.5 bg-[var(--surface)] px-3 select-none">
@@ -525,9 +578,19 @@ export default function ProjectDetailPage() {
                       <span>{statusInfo.label}</span>
                     </span>
                   ) : isCompleted ? (
-                    <span className="text-[10px] text-[var(--accent)] font-medium mt-0.5">
-                      ผ่านแล้ว
-                    </span>
+                    <div className="flex flex-col items-center mt-0.5 max-w-[120px]">
+                      <span className="text-[10px] text-[var(--accent)] font-semibold tracking-tight">
+                        ผ่านแล้ว
+                      </span>
+                      {stepPerformer?.position && (
+                        <span 
+                          className="text-[9.5px] text-[var(--foreground-muted)] text-center leading-tight line-clamp-2 mt-0.5 font-normal tracking-tight cursor-default"
+                          title={stepPerformer.name ? `${stepPerformer.name} (${stepPerformer.position})` : stepPerformer.position}
+                        >
+                          {stepPerformer.position}
+                        </span>
+                      )}
+                    </div>
                   ) : (
                     <span className="text-[10px] text-[var(--foreground-subtle)] opacity-60 mt-0.5">
                       รอดำเนินการ
