@@ -26,4 +26,9 @@ export interface ProjectHistory {
   performedAt: string;
   ipAddress: string;
   userAgent: string;
+  // Aliases for backward compatibility
+  actionBy?: string;
+  actionAt?: string;
+  comments?: string;
+  performerName?: string;
 }

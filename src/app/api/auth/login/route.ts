@@ -29,6 +29,7 @@ export async function POST(req: NextRequest) {
     if (targetUsername === 'officer') targetUsername = 'officer1';
     if (targetUsername === 'executive' || targetUsername === 'executive1' || targetUsername === 'exec') targetUsername = 'exec1';
     if (targetUsername === 'viewer') targetUsername = 'viewer1';
+    if (targetUsername === 'mcio') targetUsername = 'jeerapa';
 
     const userMatch = rawUsers.find(
       (u: any) => u.username.toLowerCase() === targetUsername || u.username.toLowerCase() === username.trim().toLowerCase()

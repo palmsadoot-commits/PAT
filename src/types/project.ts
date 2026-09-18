@@ -86,7 +86,11 @@ export interface Project {
   deletedBy?: string;
   // Contact & Bottleneck Tracking
   ownerContact?: OwnerContactInfo;
-  assignedOfficer?: AssignedOfficerInfo;
+  assignedOfficer?: AssignedOfficerInfo | null;
+  assignedReviewer?: AssignedOfficerInfo | null;
+  assignedApprover?: AssignedOfficerInfo | null;
+  assignedInspector?: AssignedOfficerInfo | null;
+  periodLabel?: string;
 }
 
 export interface ProjectComment {
@@ -97,4 +101,7 @@ export interface ProjectComment {
   createdAt: string;
   updatedAt: string;
   isDeleted: boolean;
+  commentText?: string;
+  userName?: string;
+  isInternal?: boolean;
 }
