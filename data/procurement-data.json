@@ -1,0 +1,1058 @@
+{
+  "PRJ-2569-0001": {
+    "projectId": "PRJ-2569-0001",
+    "projectNo": "MOL-2569-001",
+    "projectNameTh": "โครงการพัฒนาระบบบริการดิจิทัลกลาง สป.รง. (MOL Single Window)",
+    "fiscalYear": 2569,
+    "budgetBaht": 15000000,
+    "procurementMethod": "E_BIDDING",
+    "currentPhase": "DELIVERY_ACCEPTANCE",
+    "contractNumber": "รง. ๑๔/๒๕๖๙",
+    "contractSignedDate": "2026-02-15",
+    "contractValueBaht": 13965000,
+    "contractorName": "บริษัท ดิจิทัล โซลูชั่นส์ อินโนเวชั่น จำกัด (มหาชน)",
+    "activeMilestoneNo": 2,
+    "totalMilestones": 3,
+    "rules": [
+      {
+        "id": "RULE-STAT-01",
+        "category": "STATUTORY",
+        "nameTh": "ระยะเวลาการพิจารณาผลการประกวดราคาอิเล็กทรอนิกส์ (e-Bidding)",
+        "legalReference": "ระเบียบกระทรวงการคลังว่าด้วยการจัดซื้อจัดจ้างฯ พ.ศ. ๒๕๖๐ ข้อ ๕๕",
+        "durationDays": 7,
+        "isBusinessDays": true,
+        "canBeEditedByOrder": true,
+        "lastReviewedDate": "2026-01-15",
+        "notesTh": "ระเบียบกำหนดให้ดำเนินการให้แล้วเสร็จโดยเร็วหรือตามกรอบเวลาที่ระบุในคำสั่งแต่งตั้ง โดยปกติไม่เกิน ๗ วันทำการ"
+      },
+      {
+        "id": "RULE-STAT-02",
+        "category": "STATUTORY",
+        "nameTh": "การแจ้งผู้รับจ้างกรณีส่งมอบพัสดุไม่ถูกต้องหรือไม่ครบถ้วน",
+        "legalReference": "ระเบียบกระทรวงการคลังว่าด้วยการจัดซื้อจัดจ้างฯ พ.ศ. ๒๕๖๐ ข้อ ๑๗๕ วรรคสาม",
+        "durationDays": 3,
+        "isBusinessDays": true,
+        "canBeEditedByOrder": false,
+        "lastReviewedDate": "2026-01-15",
+        "notesTh": "ต้องทำหนังสือแจ้งผู้รับจ้างภายใน ๓ วันทำการนับแต่วันตรวจพบข้อบกพร่อง ไม่สามารถขยายหรือแก้ไขเองได้"
+      },
+      {
+        "id": "RULE-STAT-03",
+        "category": "STATUTORY",
+        "nameTh": "การเผยแพร่ร่างขอบเขตงาน (TOR) และรับฟังความคิดเห็นจากสาธารณชน",
+        "legalReference": "ระเบียบกระทรวงการคลังว่าด้วยการจัดซื้อจัดจ้างฯ พ.ศ. ๒๕๖๐ ข้อ ๔๕-๔๖",
+        "durationDays": 3,
+        "isBusinessDays": true,
+        "canBeEditedByOrder": true,
+        "lastReviewedDate": "2026-01-15",
+        "notesTh": "สำหรับการจัดซื้อจัดจ้างที่มีวงเงินเกิน ๕๐๐,๐๐๐ บาท ต้องเผยแพร่ร่างไม่น้อยกว่า ๓ วันทำการ"
+      },
+      {
+        "id": "RULE-AGENCY-01",
+        "category": "AGENCY_SLA",
+        "nameTh": "SLA การจัดทำและกลั่นกรองร่าง TOR สป.รง.",
+        "legalReference": "แนวทางปฏิบัติการบริหารแผนงานและงบประมาณ สำนักงานปลัดกระทรวงแรงงาน",
+        "durationDays": 15,
+        "isBusinessDays": false,
+        "canBeEditedByOrder": true,
+        "lastReviewedDate": "2026-01-10",
+        "notesTh": "กรอบเวลาเป้าหมายภายใน สป.รง. ในการยกร่าง TOR และจัดทำตารางเปรียบเทียบสเปก"
+      },
+      {
+        "id": "RULE-CONTRACT-01",
+        "category": "CONTRACT",
+        "nameTh": "กำหนดเวลาตรวจรับพัสดุในแต่ละงวดงานตามสัญญา",
+        "legalReference": "สัญญาจ้างเลขที่ รง. ๑๔/๒๕๖๙ ข้อ ๕",
+        "durationDays": 5,
+        "isBusinessDays": true,
+        "canBeEditedByOrder": false,
+        "lastReviewedDate": "2026-02-15",
+        "notesTh": "คณะกรรมการตรวจรับต้องดำเนินการตรวจรับให้แล้วเสร็จภายใน ๕ วันทำการนับแต่วันรับมอบงาน"
+      }
+    ],
+    "slaPauses": [
+      {
+        "id": "PAUSE-01",
+        "committeeType": "ACCEPTANCE",
+        "milestoneId": "MLS-02",
+        "pausedAt": "2026-08-20T10:00:00+07:00",
+        "resumedAt": "2026-08-24T09:00:00+07:00",
+        "pauseReason": "รอผลการทดสอบการเชื่อมต่อ API จากสำนักบริหารการทะเบียน กรมการปกครอง (หน่วยงานภายนอก)",
+        "documentRef": "หนังสือ สป.รง. ด่วนที่สุด ที่ รง ๐๒๐๑/๑๐๕๒ ลงวันที่ ๑๘ ส.ค. ๒๕๖๙",
+        "authorizedBy": "นายสมชาย มรกตศรีวรรณ",
+        "authorizedPosition": "รองปลัดกระทรวงแรงงาน",
+        "status": "RESUMED"
+      }
+    ],
+    "torPriceCommittee": {
+      "id": "COMM-TOR-001",
+      "projectId": "PRJ-2569-0001",
+      "committeeType": "TOR_PRICE",
+      "orderNumber": "คำสั่ง สป.รง. ที่ ๑๘/๒๕๖๙",
+      "orderDate": "2026-01-05",
+      "startDate": "2026-01-05",
+      "targetEndDate": "2026-01-25",
+      "allowedDays": 20,
+      "isBusinessDays": false,
+      "headOfAgencyApproval": true,
+      "approvedBy": "พันตำรวจโท วรรณพงษ์ คชรักษ์",
+      "approvedPosition": "ปลัดกระทรวงแรงงาน",
+      "members": [
+        {
+          "id": "MEM-TOR-01",
+          "userId": "USR-001",
+          "fullName": "สมชาย รักชาติ",
+          "position": "นักวิชาการคอมพิวเตอร์เชี่ยวชาญ / ผอ.ศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร",
+          "department": "ศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร",
+          "committeeRole": "CHAIR",
+          "appointedDate": "2026-01-05",
+          "conflictDeclared": true,
+          "conflictDeclaredAt": "2026-01-05T09:30:00+07:00",
+          "conflictDeclarationDetails": "ขอรับรองว่าไม่มีส่วนได้เสีย ผลประโยชน์ทับซ้อน หรือความสัมพันธ์ทางธุรกิจกับผู้ประกอบการรายใด"
+        },
+        {
+          "id": "MEM-TOR-02",
+          "userId": "USR-002",
+          "fullName": "สมหญิง ใจดี",
+          "position": "นักวิชาการคอมพิวเตอร์ชำนาญการพิเศษ / หัวหน้ากลุ่มงานพัฒนาระบบงานคอมพิวเตอร์",
+          "department": "ศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร",
+          "committeeRole": "MEMBER",
+          "appointedDate": "2026-01-05",
+          "conflictDeclared": true,
+          "conflictDeclaredAt": "2026-01-05T09:45:00+07:00"
+        },
+        {
+          "id": "MEM-TOR-03",
+          "userId": "USR-005",
+          "fullName": "ปิติ พิทักษ์",
+          "position": "นักวิเคราะห์นโยบายและแผนชำนาญการ / เจ้าหน้าที่กลั่นกรองแผนงานและงบประมาณ",
+          "department": "กองยุทธศาสตร์และแผนงาน",
+          "committeeRole": "SECRETARY",
+          "appointedDate": "2026-01-05",
+          "conflictDeclared": true,
+          "conflictDeclaredAt": "2026-01-05T10:00:00+07:00"
+        }
+      ],
+      "attachments": [
+        {
+          "name": "คำสั่งแต่งตั้งคณะกรรมการจัดทำTOR_สป.รง.18-2569.pdf",
+          "url": "/docs/procurement/order-tor-18-2569.pdf",
+          "uploadedAt": "2026-01-05T11:00:00+07:00"
+        }
+      ]
+    },
+    "evaluationCommittee": {
+      "id": "COMM-EVAL-001",
+      "projectId": "PRJ-2569-0001",
+      "committeeType": "EVALUATION",
+      "orderNumber": "คำสั่ง สป.รง. ที่ ๓๒/๒๕๖๙",
+      "orderDate": "2026-01-26",
+      "startDate": "2026-01-26",
+      "targetEndDate": "2026-02-06",
+      "allowedDays": 7,
+      "isBusinessDays": true,
+      "headOfAgencyApproval": true,
+      "approvedBy": "พันตำรวจโท วรรณพงษ์ คชรักษ์",
+      "approvedPosition": "ปลัดกระทรวงแรงงาน",
+      "members": [
+        {
+          "id": "MEM-EVL-01",
+          "userId": "USR-010",
+          "fullName": "สุชาติ ประเสริฐ",
+          "position": "นักวิชาการแรงงานเชี่ยวชาญ / กรรมการกลั่นกรองโครงการระดับ สป.รง.",
+          "department": "สำนักตรวจและประเมินผล",
+          "committeeRole": "CHAIR",
+          "appointedDate": "2026-01-26",
+          "conflictDeclared": true,
+          "conflictDeclaredAt": "2026-01-26T08:30:00+07:00"
+        },
+        {
+          "id": "MEM-EVL-02",
+          "userId": "USR-006",
+          "fullName": "ชูใจ บุญมี",
+          "position": "นิติกรชำนาญการ / เจ้าหน้าที่ตรวจสอบสัญญาและระเบียบการจัดซื้อจัดจ้าง",
+          "department": "กองกฎหมาย",
+          "committeeRole": "MEMBER",
+          "appointedDate": "2026-01-26",
+          "conflictDeclared": true,
+          "conflictDeclaredAt": "2026-01-26T09:00:00+07:00"
+        },
+        {
+          "id": "MEM-EVL-03",
+          "userId": "USR-011",
+          "fullName": "นฤมล กล้าหาญ",
+          "position": "นักวิชาการคอมพิวเตอร์เชี่ยวชาญ / กรรมการพิจารณาสถาปัตยกรรมเทคโนโลยีดิจิทัล",
+          "department": "ศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร",
+          "committeeRole": "SECRETARY",
+          "appointedDate": "2026-01-26",
+          "conflictDeclared": true,
+          "conflictDeclaredAt": "2026-01-26T09:15:00+07:00"
+        }
+      ],
+      "attachments": [
+        {
+          "name": "คำสั่งแต่งตั้งคณะกรรมการพิจารณาผล_สป.รง.32-2569.pdf",
+          "url": "/docs/procurement/order-eval-32-2569.pdf",
+          "uploadedAt": "2026-01-26T10:00:00+07:00"
+        }
+      ]
+    },
+    "acceptanceCommittee": {
+      "id": "COMM-ACC-001",
+      "projectId": "PRJ-2569-0001",
+      "committeeType": "ACCEPTANCE",
+      "orderNumber": "คำสั่ง สป.รง. ที่ ๔๕/๒๕๖๙",
+      "orderDate": "2026-02-15",
+      "startDate": "2026-02-15",
+      "targetEndDate": "2026-12-31",
+      "allowedDays": 5,
+      "isBusinessDays": true,
+      "headOfAgencyApproval": true,
+      "approvedBy": "พันตำรวจโท วรรณพงษ์ คชรักษ์",
+      "approvedPosition": "ปลัดกระทรวงแรงงาน",
+      "members": [
+        {
+          "id": "MEM-ACC-01",
+          "userId": "USR-013",
+          "fullName": "นางสาวจีระภา บุญรัตน์",
+          "position": "ผู้ตรวจราชการกระทรวงแรงงาน / ผู้บริหารเทคโนโลยีสารสนเทศระดับสูงระดับกระทรวง (MCIO)",
+          "department": "สำนักตรวจและประเมินผล",
+          "committeeRole": "CHAIR",
+          "appointedDate": "2026-02-15",
+          "conflictDeclared": true,
+          "conflictDeclaredAt": "2026-02-15T09:00:00+07:00"
+        },
+        {
+          "id": "MEM-ACC-02",
+          "userId": "USR-003",
+          "fullName": "มานะ มีสุข",
+          "position": "นักวิชาการคอมพิวเตอร์ชำนาญการพิเศษ / หัวหน้ากลุ่มงานบริหารคอมพิวเตอร์และเครือข่าย",
+          "department": "ศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร",
+          "committeeRole": "MEMBER",
+          "appointedDate": "2026-02-15",
+          "conflictDeclared": true,
+          "conflictDeclaredAt": "2026-02-15T09:15:00+07:00"
+        },
+        {
+          "id": "MEM-ACC-03",
+          "userId": "USR-004",
+          "fullName": "มานี เจริญรุ่ง",
+          "position": "นักวิชาการคอมพิวเตอร์ชำนาญการ / เจ้าหน้าที่ตรวจสอบระบบและสถาปัตยกรรมดิจิทัล",
+          "department": "ศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร",
+          "committeeRole": "MEMBER",
+          "appointedDate": "2026-02-15",
+          "conflictDeclared": true,
+          "conflictDeclaredAt": "2026-02-15T09:20:00+07:00"
+        },
+        {
+          "id": "MEM-ACC-04",
+          "userId": "USR-007",
+          "fullName": "สมศักดิ์ สว่างวงศ์",
+          "position": "นักวิชาการแรงงานชำนาญการพิเศษ / ผู้อำนวยการกลุ่มแรงงานนอกระบบ",
+          "department": "สำนักงานนโยบายแรงงานนอกระบบ",
+          "committeeRole": "SECRETARY",
+          "appointedDate": "2026-02-15",
+          "conflictDeclared": true,
+          "conflictDeclaredAt": "2026-02-15T09:30:00+07:00"
+        }
+      ],
+      "attachments": [
+        {
+          "name": "คำสั่งแต่งตั้งคณะกรรมการตรวจรับพัสดุ_สป.รง.45-2569.pdf",
+          "url": "/docs/procurement/order-acc-45-2569.pdf",
+          "uploadedAt": "2026-02-15T10:00:00+07:00"
+        }
+      ]
+    },
+    "torSpecification": {
+      "id": "TOR-PRJ-2569-0001",
+      "projectId": "PRJ-2569-0001",
+      "version": 1,
+      "status": "APPROVED",
+      "approvedAt": "2026-01-20T14:30:00+07:00",
+      "approvedBy": "พันตำรวจโท วรรณพงษ์ คชรักษ์",
+      "publicHearingStartDate": "2026-01-16",
+      "publicHearingEndDate": "2026-01-20",
+      "publicHearingFeedbackCount": 2,
+      "sections": [
+        {
+          "key": "OBJECTIVES",
+          "titleTh": "๑. วัตถุประสงค์และผลสัมฤทธิ์ของโครงการ",
+          "items": [
+            {
+              "id": "TOR-REQ-1.1",
+              "reqCode": "TOR-REQ-1.1",
+              "section": "OBJECTIVES",
+              "titleTh": "การให้บริการแบบเบ็ดเสร็จผ่านช่องทางดิจิทัลกลาง (Single Window)",
+              "specificationTh": "พัฒนาระบบให้บริการประชาชนและผู้ติดต่อราชการแบบเบ็ดเสร็จ ณ จุดเดียว สามารถยื่นคำร้อง ติดตามสถานะ และรับเอกสารอิเล็กทรอนิกส์ได้ ๒๔ ชั่วโมง",
+              "acceptanceCriteriaTh": "ระบบเปิดใช้งานผ่านเครือข่ายอินเทอร์เน็ต รองรับการยื่นคำร้องออนไลน์ไม่น้อยกว่า ๑๐ กระบวนงานหลัก มีระบบแจ้งเตือนผ่าน SMS/Email",
+              "testMethod": "UAT",
+              "evidenceRequiredTh": "รายงานผลการทดสอบการยอมรับจากผู้ใช้ (UAT Report) พร้อมภาพถ่ายหน้าจอและบันทึกการทำธุรกรรมจริง",
+              "responsibleRole": "คณะกรรมการตรวจรับพัสดุ ร่วมกับผู้แทนผู้ใช้งาน",
+              "passFailThresholdTh": "ทำรายการสำเร็จถูกต้อง ๑๐๐% และผลประเมินความพึงพอใจของผู้ใช้ไม่น้อยกว่าร้อยละ ๘๕",
+              "createdAt": "2026-01-10T10:00:00+07:00",
+              "updatedAt": "2026-01-12T10:00:00+07:00"
+            }
+          ]
+        },
+        {
+          "key": "SCOPE_DELIVERABLES",
+          "titleTh": "๒. ขอบเขตงานและสิ่งส่งมอบ",
+          "items": [
+            {
+              "id": "TOR-REQ-2.1",
+              "reqCode": "TOR-REQ-2.1",
+              "section": "SCOPE_DELIVERABLES",
+              "titleTh": "การวิเคราะห์ ออกแบบ และจัดทำพิมพ์เขียวระบบ (System Blueprint & SRS)",
+              "specificationTh": "จัดทำเอกสารข้อกำหนดความต้องการซอฟต์แวร์ (SRS), ตารางตรวจสอบย้อนกลับความต้องการ (RTM Baseline), และผังการไหลของข้อมูล (Data Flow Diagram)",
+              "acceptanceCriteriaTh": "เอกสารมีเนื้อหาครบถ้วนตามมาตรฐาน IEEE 830 และครอบคลุมขอบเขตงานทุกข้อใน TOR ๑๐๐%",
+              "testMethod": "INSPECTION",
+              "evidenceRequiredTh": "เอกสาร SRS, RTM Baseline ที่ลงนามรับรองความถูกต้องโดยผู้จัดการโครงการของผู้รับจ้าง",
+              "responsibleRole": "คณะกรรมการตรวจรับพัสดุ",
+              "passFailThresholdTh": "ผ่านการตรวจสอบเนื้อหาและความสมบูรณ์เชิงเทคนิคโดยไม่มีข้อทักท้วงค้างคา",
+              "createdAt": "2026-01-10T10:00:00+07:00",
+              "updatedAt": "2026-01-12T10:00:00+07:00"
+            }
+          ]
+        },
+        {
+          "key": "SPECS_STANDARDS_SECURITY",
+          "titleTh": "๓. รายการคุณลักษณะ มาตรฐาน และความมั่นคงปลอดภัยไซเบอร์",
+          "items": [
+            {
+              "id": "TOR-REQ-3.1",
+              "reqCode": "TOR-REQ-3.1",
+              "section": "SPECS_STANDARDS_SECURITY",
+              "titleTh": "การเชื่อมโยงระบบยืนยันตัวตนดิจิทัลภาครัฐ (ThaID) และเครือข่าย GIN",
+              "specificationTh": "ระบบต้องเชื่อมโยงบริการพิสูจน์และยืนยันตัวตนทางดิจิทัล (DOPA ThaID) และทำงานบนเครือข่ายภาครัฐ (Government Information Network: GIN)",
+              "acceptanceCriteriaTh": "สามารถ Login และตรวจสอบสิทธิ์ผ่าน ThaID SDK / OpenID Connect ได้อย่างปลอดภัย มีการเข้ารหัสระดับ TLS 1.3",
+              "testMethod": "SECURITY_SCAN",
+              "evidenceRequiredTh": "รายงานผลการทดสอบการเชื่อมต่อ API ของสำนักบริหารการทะเบียน และรายงานผลการตรวจความปลอดภัยไซเบอร์ (VAPT)",
+              "responsibleRole": "ผู้เชี่ยวชาญด้านความมั่นคงปลอดภัยสารสนเทศ ศสช.",
+              "passFailThresholdTh": "ไม่พบช่องโหว่ระดับ Critical และ High ตามเกณฑ์ OWASP Top 10",
+              "createdAt": "2026-01-10T10:00:00+07:00",
+              "updatedAt": "2026-01-12T10:00:00+07:00"
+            },
+            {
+              "id": "TOR-REQ-3.2",
+              "reqCode": "TOR-REQ-3.2",
+              "section": "SPECS_STANDARDS_SECURITY",
+              "titleTh": "ประสิทธิภาพเวลาตอบสนองและการรองรับปริมาณงาน (Performance & Scalability)",
+              "specificationTh": "ระบบต้องประมวลผลคำขอและค้นหาข้อมูลได้อย่างรวดเร็ว รองรับการขยายตัวในอนาคต",
+              "acceptanceCriteriaTh": "เวลาตอบสนองเฉลี่ย (Average Response Time) ไม่เกิน ๒.๐ วินาที ที่ระดับ ๑๐๐ ผู้ใช้พร้อมกัน (Concurrent Users)",
+              "testMethod": "AUTOMATED_TEST",
+              "evidenceRequiredTh": "รายงานผลการทดสอบโหลดและการรับภาระงาน (Load & Stress Test Report ด้วยเครื่องมือ JMeter)",
+              "responsibleRole": "คณะกรรมการตรวจรับพัสดุ",
+              "passFailThresholdTh": "Response time เฉลี่ย <= 2.0 วินาที และ Error rate < 0.1%",
+              "ambiguityWarnings": [
+                {
+                  "keyword": "รวดเร็ว",
+                  "contextSnippet": "...ประมวลผลคำขอและค้นหาข้อมูลได้อย่างรวดเร็ว รองรับการ...",
+                  "suggestedMeasurementTh": "กำหนดเวลาตอบสนองเชิงตัวเลข เช่น Response Time ไม่เกิน ๒.๐ วินาที (ปรับปรุงเรียบร้อยใน Acceptance Criteria)",
+                  "severity": "CRITICAL"
+                }
+              ],
+              "createdAt": "2026-01-10T10:00:00+07:00",
+              "updatedAt": "2026-01-12T10:00:00+07:00"
+            }
+          ]
+        },
+        {
+          "key": "EVALUATION_CRITERIA",
+          "titleTh": "๔. เกณฑ์การประเมินข้อเสนอ",
+          "items": [
+            {
+              "id": "TOR-REQ-4.1",
+              "reqCode": "TOR-REQ-4.1",
+              "section": "EVALUATION_CRITERIA",
+              "titleTh": "เกณฑ์การตัดสินแบบ Price-Performance (เกณฑ์ราคาและประสิทธิภาพ)",
+              "specificationTh": "ใช้วิธีประกวดราคาอิเล็กทรอนิกส์ (e-Bidding) โดยพิจารณาคะแนนด้านเทคนิค ร้อยละ ๖๐ และคะแนนด้านราคา ร้อยละ ๔๐",
+              "acceptanceCriteriaTh": "ผู้ยื่นข้อเสนอต้องผ่านเกณฑ์คุณสมบัติตามกฎหมาย และมีคะแนนเทคนิคไม่น้อยกว่าร้อยละ ๘๐ จึงจะได้รับการพิจารณาเปิดซองราคา",
+              "testMethod": "INSPECTION",
+              "evidenceRequiredTh": "ตารางสรุปการประเมินข้อเสนอของคณะกรรมการพิจารณาผลการประกวดราคาฯ",
+              "responsibleRole": "คณะกรรมการพิจารณาผลการประกวดราคาอิเล็กทรอนิกส์",
+              "passFailThresholdTh": "ผ่านเกณฑ์ขั้นต่ำร้อยละ ๘๐",
+              "createdAt": "2026-01-10T10:00:00+07:00",
+              "updatedAt": "2026-01-12T10:00:00+07:00"
+            }
+          ]
+        },
+        {
+          "key": "MILESTONES_PAYMENT_ACCEPTANCE",
+          "titleTh": "๕. แผนงาน งวดงาน เกณฑ์การจ่ายเงิน และเกณฑ์การตรวจรับ",
+          "items": [
+            {
+              "id": "TOR-REQ-5.1",
+              "reqCode": "TOR-REQ-5.1",
+              "section": "MILESTONES_PAYMENT_ACCEPTANCE",
+              "titleTh": "การแบ่งงวดงาน ๓ งวด และเกณฑ์การปิดงวด",
+              "specificationTh": "งวดที่ ๑: แผนและพิมพ์เขียวระบบ (๒๐%), งวดที่ ๒: พัฒนาระบบ Frontend & API และ SIT (๔๐%), งวดที่ ๓: UAT ติดตั้งจริง และอบรม (๔๐%)",
+              "acceptanceCriteriaTh": "การปิดตรวจรับในแต่ละงวดจะต้องไม่มีข้อบกพร่องระดับ Critical/High ตกค้าง และส่งมอบสิ่งส่งมอบครบตามสัญญา",
+              "testMethod": "INSPECTION",
+              "evidenceRequiredTh": "ใบรับรองผลการปฏิบัติงานและบันทึกผลการตรวจรับพัสดุ",
+              "responsibleRole": "คณะกรรมการตรวจรับพัสดุ",
+              "passFailThresholdTh": "ผ่านการอนุมัติมติเอกฉันท์หรือเสียงข้างมากของคณะกรรมการ",
+              "createdAt": "2026-01-10T10:00:00+07:00",
+              "updatedAt": "2026-01-12T10:00:00+07:00"
+            }
+          ]
+        },
+        {
+          "key": "TRAINING_IP_SOURCECODE",
+          "titleTh": "๖. เงื่อนไขการอบรม ถ่ายทอดความรู้ ซอร์สโค้ด และทรัพย์สินทางปัญญา",
+          "items": [
+            {
+              "id": "TOR-REQ-6.1",
+              "reqCode": "TOR-REQ-6.1",
+              "section": "TRAINING_IP_SOURCECODE",
+              "titleTh": "การส่งมอบ Source Code กรรมสิทธิ์ในทรัพย์สินทางปัญญา และคู่มือระบบ",
+              "specificationTh": "ส่งมอบ Source Code ทั้งหมดพร้อม Git Repository, Scripts สำหรับ Build/Deploy, คู่มือ Admin/User และสิทธิ์ในทรัพย์สินทางปัญญาตกเป็นของ สป.รง.",
+              "acceptanceCriteriaTh": "Source Code ถูกส่งมอบผ่าน Secure Vault สามารถ Compile และ Deploy บนสภาพแวดล้อมจำลองของ สป.รง. ได้สมบูรณ์ ๑๐๐%",
+              "testMethod": "CODE_REVIEW",
+              "evidenceRequiredTh": "บันทึกการส่งมอบรหัสโปรแกรมต้นฉบับ, ผลการทดสอบ Clean Build จาก Source Code และหนังสือโอนกรรมสิทธิ์",
+              "responsibleRole": "ทีมวิศวกรซอฟต์แวร์ ศสช. และคณะกรรมการตรวจรับ",
+              "passFailThresholdTh": "Compile สำเร็จ ๑๐๐% และไม่มี Third-party License ละเมิดสิทธิ์",
+              "createdAt": "2026-01-10T10:00:00+07:00",
+              "updatedAt": "2026-01-12T10:00:00+07:00"
+            }
+          ]
+        },
+        {
+          "key": "WARRANTY_DEFECT_PENALTY",
+          "titleTh": "๗. เงื่อนไขการรับประกัน การแก้ไข Defect ค่าปรับ และ Change Control",
+          "items": [
+            {
+              "id": "TOR-REQ-7.1",
+              "reqCode": "TOR-REQ-7.1",
+              "section": "WARRANTY_DEFECT_PENALTY",
+              "titleTh": "การรับประกันความชำรุดบกพร่อง ๑ ปี และ SLA การแก้ไขปัญหา",
+              "specificationTh": "รับประกันความชำรุดบกพร่องไม่น้อยกว่า ๑ ปี กำหนดเวลาตอบสนองปัญหา Critical ภายใน ๒ ชั่วโมง และแก้ไขให้แล้วเสร็จภายใน ๑๒ ชั่วโมง",
+              "acceptanceCriteriaTh": "มีระบบ Helpdesk รับแจ้งปัญหาตลอด ๒๔x๗ และมีรายงานสรุปการแก้ไขข้อบกพร่องประจำเดือน",
+              "testMethod": "AUDIT_LOG",
+              "evidenceRequiredTh": "หนังสือค้ำประกันสัญญา และข้อตกลงระดับการให้บริการ (SLA Agreement)",
+              "responsibleRole": "คณะกรรมการตรวจรับพัสดุ",
+              "passFailThresholdTh": "ผู้รับจ้างลงนามผูกพันตามเงื่อนไขในสัญญา",
+              "createdAt": "2026-01-10T10:00:00+07:00",
+              "updatedAt": "2026-01-12T10:00:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    "medianPricePackage": {
+      "id": "MP-PRJ-2569-0001",
+      "projectId": "PRJ-2569-0001",
+      "medianPriceBaht": 14250000,
+      "calculationMethodTh": "ใช้ค่าเฉลี่ยของราคาที่สืบได้จากท้องตลาดและผู้ประกอบการ ๓ รายที่มีคุณลักษณะเฉพาะเทียบเคียงได้",
+      "minSurveyedBaht": 13900000,
+      "maxSurveyedBaht": 14800000,
+      "medianSurveyedBaht": 14250000,
+      "certifiedBy": "สมชาย รักชาติ",
+      "certifiedPosition": "ประธานคณะกรรมการกำหนดราคากลาง / ผอ.ศสช.",
+      "certifiedDate": "2026-01-22",
+      "announcementDate": "2026-01-23",
+      "disclosureFormBk01Url": "/docs/procurement/form-bk01-mol-2569-001.pdf",
+      "surveys": [
+        {
+          "id": "SRV-01",
+          "sourceName": "บริษัท สยาม ซอฟต์แวร์ อินทิเกรชัน จำกัด",
+          "sourceType": "MARKET_SURVEY",
+          "documentRefOrUrl": "ใบเสนอราคาเลขที่ QT-2026/01-089 ลงวันที่ ๑๒ มกราคม ๒๕๖๙",
+          "surveyDate": "2026-01-12",
+          "surveyorName": "สมหญิง ใจดี",
+          "surveyorPosition": "นักวิชาการคอมพิวเตอร์ชำนาญการพิเศษ",
+          "quotedPriceBaht": 14800000,
+          "specEquivalence": "IDENTICAL",
+          "specComparisonNotesTh": "คุณลักษณะเฉพาะตรงตามขอบเขตงาน TOR ทุกรายการ มีสถาปัตยกรรม Microservices และรองรับ ThaID",
+          "isExcludedAsOutlier": false
+        },
+        {
+          "id": "SRV-02",
+          "sourceName": "บริษัท กสท ไอที คอนซัลติ้ง แอนด์ ดีเวลลอปเมนต์ จำกัด",
+          "sourceType": "MARKET_SURVEY",
+          "documentRefOrUrl": "ใบเสนอราคาเลขที่ KST-MOL-6901 ลงวันที่ ๑๔ มกราคม ๒๕๖๙",
+          "surveyDate": "2026-01-14",
+          "surveyorName": "สมหญิง ใจดี",
+          "surveyorPosition": "นักวิชาการคอมพิวเตอร์ชำนาญการพิเศษ",
+          "quotedPriceBaht": 14050000,
+          "specEquivalence": "EQUIVALENT",
+          "specComparisonNotesTh": "คุณลักษณะเฉพาะเทียบเท่า โดยใช้เทคโนโลยีคลาวด์เนทีฟที่สอดคล้องกับโครงสร้าง GDCC",
+          "isExcludedAsOutlier": false
+        },
+        {
+          "id": "SRV-03",
+          "sourceName": "บริษัท ทีทีซี ดิจิทัล โซลูชั่นส์ จำกัด",
+          "sourceType": "HISTORICAL_CONTRACT",
+          "documentRefOrUrl": "สัญญาจ้างพัฒนาระบบบริการอิเล็กทรอนิกส์ กรมพัฒนาฝีมือแรงงาน สัญญาเลขที่ ๔/๒๕๖๘",
+          "surveyDate": "2026-01-15",
+          "surveyorName": "ปิติ พิทักษ์",
+          "surveyorPosition": "นักวิเคราะห์นโยบายและแผนชำนาญการ",
+          "quotedPriceBaht": 13900000,
+          "specEquivalence": "EQUIVALENT",
+          "specComparisonNotesTh": "เป็นสัญญาเดิมในระบบที่มีปริมาณงานและจำนวนกระบวนการเทียบเคียงกันได้",
+          "isExcludedAsOutlier": false
+        },
+        {
+          "id": "SRV-04",
+          "sourceName": "ห้างหุ้นส่วนจำกัด บางกอกเว็บแอนด์แอพ",
+          "sourceType": "MARKET_SURVEY",
+          "documentRefOrUrl": "ใบเสนอราคาเลขที่ BWA-26-004 ลงวันที่ ๑๓ มกราคม ๒๕๖๙",
+          "surveyDate": "2026-01-13",
+          "surveyorName": "สมหญิง ใจดี",
+          "surveyorPosition": "นักวิชาการคอมพิวเตอร์ชำนาญการพิเศษ",
+          "quotedPriceBaht": 8500000,
+          "specEquivalence": "INFERIOR",
+          "specComparisonNotesTh": "คุณลักษณะต่ำกว่าเกณฑ์ ไม่รองรับระบบคลาวด์ GDCC และไม่รวมระบบความปลอดภัย VAPT",
+          "isExcludedAsOutlier": true,
+          "outlierExclusionReasonTh": "สเปกต่ำกว่ามาตรฐาน TOR และราคาต่ำผิดปกติอย่างมีนัยสำคัญ (Outlier) ไม่สามารถนำมาคิดราคากลางได้"
+        }
+      ]
+    },
+    "evaluationResolution": {
+      "id": "EVL-RES-PRJ-2569-0001",
+      "projectId": "PRJ-2569-0001",
+      "procurementMethod": "E_BIDDING",
+      "meetingDate": "2026-02-02",
+      "meetingNo": "๑/๒๕๖๙",
+      "slaDaysAllowed": 7,
+      "actualDaysUsed": 5,
+      "isWithinSLA": true,
+      "winningBidderName": "บริษัท ดิจิทัล โซลูชั่นส์ อินโนเวชั่น จำกัด (มหาชน)",
+      "awardedPriceBaht": 13965000,
+      "meetingMinutesText": "คณะกรรมการได้ตรวจสอบเอกสารหลักฐาน ข้อเสนอทางเทคนิค และซองราคาของผู้ยื่นข้อเสนอทั้ง ๓ ราย มีมติเป็นเอกฉันท์คัดเลือก บริษัท ดิจิทัล โซลูชั่นส์ อินโนเวชั่น จำกัด (มหาชน) เนื่องจากได้คะแนนรวมสูงสุดและเสนอราคาต่ำกว่าราคากลาง",
+      "recommendationReportText": "รายงานเสนอหัวหน้าหน่วยงานของรัฐเพื่อโปรดอนุมัติสั่งซื้อสั่งจ้าง ตามระเบียบกระทรวงการคลังฯ ข้อ ๕๕",
+      "signedByMembers": ["สุชาติ ประเสริฐ", "ชูใจ บุญมี", "นฤมล กล้าหาญ"],
+      "headOfAgencyVerdict": "APPROVED",
+      "headOfAgencyVerdictAt": "2026-02-05T11:00:00+07:00",
+      "roleConflictCheckPassed": true,
+      "dissentingOpinions": [],
+      "bidders": [
+        {
+          "id": "BDR-01",
+          "bidderTaxId": "0107563000124",
+          "bidderNameTh": "บริษัท ดิจิทัล โซลูชั่นส์ อินโนเวชั่น จำกัด (มหาชน)",
+          "submittedAt": "2026-01-29T10:15:00+07:00",
+          "quotedPriceBaht": 13965000,
+          "technicalScore": 94.5,
+          "priceScore": 40.0,
+          "totalCombinedScore": 96.7,
+          "isDisqualified": false,
+          "qualificationChecks": [
+            { "criterionId": "QC-01", "titleTh": "คุณสมบัติตามกฎหมายและไม่มีผลประโยชน์ทับซ้อน", "descriptionTh": "ไม่เป็นผู้ทิ้งงาน ไม่อยู่ในบัญชีรายชื่อผู้ถูกตัดสิทธิ์", "isPassed": true },
+            { "criterionId": "QC-02", "titleTh": "หลักประกันการยื่นข้อเสนอ (Bid Bond)", "descriptionTh": "หนังสือค้ำประกันธนาคารร้อยละ ๕ ของวงเงินงบประมาณ", "isPassed": true }
+          ],
+          "collusionChecks": [
+            { "criterionId": "CC-01", "titleTh": "ตรวจสอบความเชื่อมโยงของผู้ถือหุ้นและกรรมการ", "descriptionTh": "ไม่พบรายชื่อกรรมการหรือผู้ถือหุ้นรายใหญ่ซ้ำซ้อนกับผู้ยื่นข้อเสนอรายอื่น", "isPassed": true },
+            { "criterionId": "CC-02", "titleTh": "ตรวจสอบ IP Address และช่องทางการยื่นข้อเสนอ", "descriptionTh": "ยื่นข้อเสนอจากพิกัดเครือข่ายที่ไม่สัมพันธ์กัน", "isPassed": true }
+          ]
+        },
+        {
+          "id": "BDR-02",
+          "bidderTaxId": "0105558000451",
+          "bidderNameTh": "บริษัท ไทยเทคโนโลยี ซิสเต็มส์ แอนด์ เซอร์วิส จำกัด",
+          "submittedAt": "2026-01-29T14:30:00+07:00",
+          "quotedPriceBaht": 14100000,
+          "technicalScore": 88.0,
+          "priceScore": 39.6,
+          "totalCombinedScore": 92.4,
+          "isDisqualified": false,
+          "qualificationChecks": [
+            { "criterionId": "QC-01", "titleTh": "คุณสมบัติตามกฎหมายและไม่มีผลประโยชน์ทับซ้อน", "descriptionTh": "เอกสารถูกต้องครบถ้วน", "isPassed": true },
+            { "criterionId": "QC-02", "titleTh": "หลักประกันการยื่นข้อเสนอ (Bid Bond)", "descriptionTh": "ถูกต้อง", "isPassed": true }
+          ],
+          "collusionChecks": [
+            { "criterionId": "CC-01", "titleTh": "ตรวจสอบความเชื่อมโยงของผู้ถือหุ้นและกรรมการ", "descriptionTh": "ไม่พบการสมยอมราคา", "isPassed": true },
+            { "criterionId": "CC-02", "titleTh": "ตรวจสอบ IP Address", "descriptionTh": "ปกติ", "isPassed": true }
+          ]
+        }
+      ]
+    },
+    "rtmMatrix": [
+      {
+        "id": "RTM-01",
+        "torReqCode": "TOR-REQ-1.1",
+        "contractClause": "สัญญาข้อ ๑ และเอกสารแนบท้าย ๒",
+        "milestoneNo": 1,
+        "milestoneTitleTh": "งวดที่ ๑: แผนและพิมพ์เขียวระบบ",
+        "requirementTitleTh": "การวิเคราะห์และออกแบบพิมพ์เขียวบริการดิจิทัลกลาง Single Window",
+        "acceptanceCriteriaTh": "เอกสาร SRS และพิมพ์เขียวสถาปัตยกรรมระบบครอบคลุม ๑๐ กระบวนงานหลัก",
+        "testCaseId": "TC-DOC-01",
+        "testCaseTitleTh": "ตรวจสอบความสมบูรณ์ของเอกสาร SRS และ RTM",
+        "testResult": "PASS",
+        "evidenceType": "DOCUMENT",
+        "evidenceRef": "DOC-REF-SRS-v1.0.pdf",
+        "evidenceFileName": "เอกสารความต้องการซอฟต์แวร์_SRS_v1.0.pdf",
+        "verdict": "PASS",
+        "inspectorNotesTh": "เอกสารครบถ้วนสอดคล้องตามมาตรฐาน IEEE 830",
+        "reviewedBy": "มานะ มีสุข",
+        "reviewedAt": "2026-04-28T10:00:00+07:00"
+      },
+      {
+        "id": "RTM-02",
+        "torReqCode": "TOR-REQ-3.1",
+        "contractClause": "สัญญาข้อ ๓ (ระบบความปลอดภัยและการเชื่อมโยง)",
+        "milestoneNo": 2,
+        "milestoneTitleTh": "งวดที่ ๒: พัฒนาระบบ Frontend, APIs และ SIT",
+        "requirementTitleTh": "การเชื่อมต่อระบบยืนยันตัวตนดิจิทัล ThaID ผ่าน Secure Gateway",
+        "acceptanceCriteriaTh": "ระบบสามารถล็อกอินและถอดรหัส Token จาก ThaID ได้สำเร็จภายใน ๒ วินาที",
+        "testCaseId": "TC-API-03",
+        "testCaseTitleTh": "ทดสอบ Integration API กับ ThaID Staging",
+        "testResult": "PASS",
+        "evidenceType": "API_LOG_AND_SCREENSHOT",
+        "evidenceRef": "LOG-THAID-INTEGRATION-20260825.json",
+        "evidenceFileName": "บันทึกผลการทดสอบเชื่อมโยงThaID_SIT.pdf",
+        "verdict": "PASS",
+        "inspectorNotesTh": "ทดสอบยื่นคำร้องด้วย ThaID บัตรประชาชนจำลองผ่าน ๕๐ เคส ไม่พบข้อผิดพลาด",
+        "reviewedBy": "มานี เจริญรุ่ง",
+        "reviewedAt": "2026-08-27T14:20:00+07:00"
+      },
+      {
+        "id": "RTM-03",
+        "torReqCode": "TOR-REQ-3.2",
+        "contractClause": "สัญญาข้อ ๔ (มาตรฐานสมรรถนะระบบ)",
+        "milestoneNo": 2,
+        "milestoneTitleTh": "งวดที่ ๒: พัฒนาระบบ Frontend, APIs และ SIT",
+        "requirementTitleTh": "การทดสอบสมรรถนะการตอบสนองระบบ (Performance Response Time)",
+        "acceptanceCriteriaTh": "เวลาตอบสนองเฉลี่ยไม่เกิน ๒.๐ วินาที ที่ระดับ ๑๐๐ Concurrent Users",
+        "testCaseId": "TC-PERF-01",
+        "testCaseTitleTh": "Load Testing ด้วย Apache JMeter 100 Users",
+        "testResult": "PASS",
+        "evidenceType": "TEST_EXECUTION_LOG",
+        "evidenceRef": "JMETR-PERF-RUN-02.pdf",
+        "evidenceFileName": "รายงานผลการทดสอบโหลด_JMeter_Run2.pdf",
+        "verdict": "PASS",
+        "inspectorNotesTh": "เวลาตอบสนองเฉลี่ยอยู่ที่ ๑.๔๒ วินาที อัตราความผิดพลาด ๐.๐๒% ผ่านเกณฑ์ที่กำหนด",
+        "reviewedBy": "มานะ มีสุข",
+        "reviewedAt": "2026-08-28T11:00:00+07:00"
+      },
+      {
+        "id": "RTM-04",
+        "torReqCode": "TOR-REQ-6.1",
+        "contractClause": "สัญญาข้อ ๘ (การส่งมอบกรรมสิทธิ์และซอร์สโค้ด)",
+        "milestoneNo": 2,
+        "milestoneTitleTh": "งวดที่ ๒: พัฒนาระบบ Frontend, APIs และ SIT",
+        "requirementTitleTh": "การจัดเก็บและส่งมอบซอร์สโค้ดใน Git Repository และ Container Image",
+        "acceptanceCriteriaTh": "ซอร์สโค้ดครบทุกโมดูล สามารถ Build และ Run ผ่าน Docker Compose โดยไม่ติดปัญหา Dependencies",
+        "testCaseId": "TC-BLD-02",
+        "testCaseTitleTh": "Clean Build & Container Scan บนสภาพแวดล้อมจำลอง ศสช.",
+        "testResult": "PASS",
+        "evidenceType": "GIT_COMMIT_HASH",
+        "evidenceRef": "git:mol/single-window@v0.9.2-rc",
+        "evidenceFileName": "รายงานการส่งมอบและตรวจสอบรหัสโปรแกรม_v0.9.2.pdf",
+        "verdict": "PASS",
+        "inspectorNotesTh": "ตรวจสอบและทดสอบ Build บนเครื่องเซิร์ฟเวอร์ทดสอบ ศสช. สำเร็จ",
+        "reviewedBy": "มานี เจริญรุ่ง",
+        "reviewedAt": "2026-08-28T16:00:00+07:00"
+      },
+      {
+        "id": "RTM-05",
+        "torReqCode": "TOR-REQ-1.1",
+        "contractClause": "สัญญาข้อ ๑ และ ๒",
+        "milestoneNo": 3,
+        "milestoneTitleTh": "งวดที่ ๓: UAT ติดตั้งจริง และอบรม",
+        "requirementTitleTh": "การทดสอบการยอมรับของผู้ใช้จริง (User Acceptance Test: UAT)",
+        "acceptanceCriteriaTh": "ผู้ใช้งานจริงจากทุกหน่วยงานทดสอบครบ ๑๐๐% และลงนามรับรองผล UAT",
+        "testCaseId": "TC-UAT-ALL",
+        "testCaseTitleTh": "การทดสอบ UAT ครบทุก User Journey",
+        "testResult": "NOT_RUN",
+        "evidenceType": "UAT_SIGN_OFF_FORM",
+        "evidenceRef": "",
+        "verdict": "NOT_STARTED",
+        "inspectorNotesTh": "รอดำเนินการตามแผนส่งมอบงวดที่ ๓"
+      }
+    ],
+    "digitalChecklist": [
+      {
+        "id": "DC-01",
+        "category": "FUNCTIONAL",
+        "titleTh": "การทดสอบกระบวนงานครบทุก User Journey และ Business Rules",
+        "specificationTh": "ระบบรองรับการยื่นคำขอ ตรวจสอบเอกสาร และออกใบอนุมัติอิเล็กทรอนิกส์ได้ตามขั้นตอนกฎหมาย",
+        "evidenceRequiredTh": "Test Execution Matrix และบันทึกผลการทดสอบระบบ (SIT/UAT)",
+        "isVerified": true,
+        "evidenceUrlOrRef": "/evidence/PRJ-2569-0001/sit-execution-matrix.pdf",
+        "verifiedBy": "มานี เจริญรุ่ง",
+        "verifiedAt": "2026-08-28T15:00:00+07:00",
+        "notesTh": "ทดสอบฟังก์ชันงานประจำงวดที่ ๒ ผ่านครบ ๑๐๐%"
+      },
+      {
+        "id": "DC-02",
+        "category": "NON_FUNCTIONAL",
+        "titleTh": "การทดสอบสมรรถนะ (Performance) และความพร้อมใช้งาน (Availability)",
+        "specificationTh": "รองรับ ๑๐๐ Concurrent Users โดย Response Time ไม่เกิน ๒.๐ วินาที และมี Uptime >= 99.5%",
+        "evidenceRequiredTh": "Load Testing Log Report จาก JMeter",
+        "isVerified": true,
+        "evidenceUrlOrRef": "/evidence/PRJ-2569-0001/jmeter-report.pdf",
+        "verifiedBy": "มานะ มีสุข",
+        "verifiedAt": "2026-08-28T15:30:00+07:00"
+      },
+      {
+        "id": "DC-03",
+        "category": "SECURITY",
+        "titleTh": "การทดสอบเจาะระบบและตรวจหาช่องโหว่ (VAPT & Access Control)",
+        "specificationTh": "ต้องไม่พบช่องโหว่ระดับ Critical และ High ตามเกณฑ์มาตรฐาน OWASP และสอดคล้องตามมาตรฐานไซเบอร์ภาครัฐ",
+        "evidenceRequiredTh": "รายงานผลการทดสอบ VAPT จากหน่วยงานอิสระที่ได้รับมาตรฐาน",
+        "isVerified": true,
+        "evidenceUrlOrRef": "/evidence/PRJ-2569-0001/vapt-interim-report.pdf",
+        "verifiedBy": "มานี เจริญรุ่ง",
+        "verifiedAt": "2026-08-28T16:00:00+07:00"
+      },
+      {
+        "id": "DC-04",
+        "category": "DATA_MIGRATION",
+        "titleTh": "การเทียบยอดข้อมูลเดิมและแผนสำรองกู้คืน (Reconciliation & Rollback)",
+        "specificationTh": "ตรวจสอบจำนวนระเบียนข้อมูล (Record Count) นำเข้าถูกต้องครบถ้วนและมีกลไกย้อนกลับ (Rollback Plan)",
+        "evidenceRequiredTh": "บันทึกผลการกระทบยอดข้อมูลและการทดสอบซักซ้อมกู้คืน",
+        "isVerified": false,
+        "evidenceUrlOrRef": "",
+        "notesTh": "รอการซักซ้อม Migration ในงวดที่ ๓"
+      },
+      {
+        "id": "DC-05",
+        "category": "INTEGRATION",
+        "titleTh": "การเชื่อมต่อระบบภายนอก จัดการ Timeout, Error และ Retry",
+        "specificationTh": "เชื่อมต่อระบบ ThaID และระบบฐานข้อมูลทะเบียนราษฎร์ มีการดักจับข้อผิดพลาดและส่งข้อมูลซ้ำอัตโนมัติ",
+        "evidenceRequiredTh": "API Integration Test Log และ Architecture Diagram",
+        "isVerified": true,
+        "evidenceUrlOrRef": "/evidence/PRJ-2569-0001/api-integration-log.json",
+        "verifiedBy": "มานะ มีสุข",
+        "verifiedAt": "2026-08-28T16:30:00+07:00"
+      },
+      {
+        "id": "DC-06",
+        "category": "UAT",
+        "titleTh": "แผนการทดสอบ UAT และเกณฑ์การยอมรับ (Exit Criteria)",
+        "specificationTh": "มี Test Script และรายการทดสอบที่ครอบคลุม พร้อมการลงนามยอมรับจากผู้แทนผู้ใช้งาน",
+        "evidenceRequiredTh": "UAT Test Plan & Exit Criteria Sign-off Sheet",
+        "isVerified": false,
+        "notesTh": "กำหนดการทดสอบ UAT ในงวดที่ ๓"
+      },
+      {
+        "id": "DC-07",
+        "category": "OPERATIONAL_READINESS",
+        "titleTh": "ความพร้อมด้านคู่มือการใช้งาน Runbook และการฝึกอบรม",
+        "specificationTh": "มีคู่มือสำหรับผู้ดูแลระบบ (Admin Manual), คู่มือผู้ใช้ (User Manual) และจัดฝึกอบรมบุคลากร",
+        "evidenceRequiredTh": "เอกสารคู่มือฉบับร่าง และแผนการฝึกอบรม",
+        "isVerified": true,
+        "evidenceUrlOrRef": "/evidence/PRJ-2569-0001/draft-manuals.pdf",
+        "verifiedBy": "สมศักดิ์ สว่างวงศ์",
+        "verifiedAt": "2026-08-28T17:00:00+07:00"
+      },
+      {
+        "id": "DC-08",
+        "category": "SOURCE_CODE_CONFIG",
+        "titleTh": "การส่งมอบ Source Code, บัญชี License และรหัสผ่านใน Secure Vault",
+        "specificationTh": "รหัสโปรแกรมถูกจัดเก็บบนระบบควบคุมเวอร์ชัน (Git), บัญชี Software License เป็นกรรมสิทธิ์ของ สป.รง.",
+        "evidenceRequiredTh": "Git Repository Access, Package Verification Log, License Inventory",
+        "isVerified": true,
+        "evidenceUrlOrRef": "git:mol/single-window@v0.9.2-rc",
+        "verifiedBy": "มานี เจริญรุ่ง",
+        "verifiedAt": "2026-08-28T17:15:00+07:00"
+      },
+      {
+        "id": "DC-09",
+        "category": "WARRANTY_SLA",
+        "titleTh": "การจัดทำระบบติดตาม Defect Backlog และข้อตกลง SLA การบำรุงรักษา",
+        "specificationTh": "มีเครื่องมือระบบตั๋ว (Ticketing System) บันทึกและติดตาม Defect ตามระดับความรุนแรง",
+        "evidenceRequiredTh": "หนังสือรับรองและเอกสารกำหนด SLA Maintenance",
+        "isVerified": true,
+        "evidenceUrlOrRef": "/evidence/PRJ-2569-0001/sla-maintenance-agreement.pdf",
+        "verifiedBy": "สมศักดิ์ สว่างวงศ์",
+        "verifiedAt": "2026-08-28T17:30:00+07:00"
+      }
+    ],
+    "defects": [
+      {
+        "id": "DEF-2569-001",
+        "defectCode": "DEF-2569-001",
+        "milestoneNo": 2,
+        "rtmReqCode": "TOR-REQ-3.1",
+        "titleTh": "การเชื่อมโยงระบบ ThaID พบ Timeout เป็นระยะเมื่อมีคำขอพร้อมกันเกิน ๓๐ รายการ",
+        "descriptionTh": "พบข้อผิดพลาด HTTP 504 Gateway Timeout ระหว่างการทดสอบเชื่อมต่อ API ในช่วงปริมาณงานสูง",
+        "severity": "HIGH",
+        "status": "RESOLVED",
+        "assignedTo": "ทีมวิศวกรซอฟต์แวร์ผู้รับจ้าง (บมจ.ดิจิทัล โซลูชั่นส์ฯ)",
+        "reportedDate": "2026-08-20",
+        "targetResolutionDate": "2026-08-23",
+        "resolvedDate": "2026-08-23",
+        "retestEvidenceUrl": "/evidence/PRJ-2569-0001/retest-def-001.pdf"
+      },
+      {
+        "id": "DEF-2569-002",
+        "defectCode": "DEF-2569-002",
+        "milestoneNo": 2,
+        "rtmReqCode": "TOR-REQ-6.1",
+        "titleTh": "ไฟล์ Dockerfile ยังไม่มีการระบุ non-root user สำหรับรันโปรแกรมส่วนหน้า",
+        "descriptionTh": "การคอนฟิก Container ยังใช้สิทธิ์ root ซึ่งไม่ผ่านเกณฑ์ Best Practice ด้านความปลอดภัยของ สป.รง.",
+        "severity": "MEDIUM",
+        "status": "RESOLVED",
+        "assignedTo": "วิศวกร DevOps ผู้รับจ้าง",
+        "reportedDate": "2026-08-22",
+        "targetResolutionDate": "2026-08-25",
+        "resolvedDate": "2026-08-24",
+        "retestEvidenceUrl": "/evidence/PRJ-2569-0001/retest-def-002.pdf"
+      }
+    ],
+    "notices175": [],
+    "certificates": [
+      {
+        "id": "CERT-MLS1-FINANCE",
+        "certificateNo": "บร.๐๑/๒๕๖๙",
+        "issueDate": "2026-04-28",
+        "contractNo": "รง. ๑๔/๒๕๖๙",
+        "projectNameTh": "โครงการพัฒนาระบบบริการดิจิทัลกลาง สป.รง. (MOL Single Window)",
+        "contractorName": "บริษัท ดิจิทัล โซลูชั่นส์ อินโนเวชั่น จำกัด (มหาชน)",
+        "milestoneNo": 1,
+        "milestoneTitleTh": "งวดที่ ๑: แผนและพิมพ์เขียวระบบ",
+        "deliveredDate": "2026-04-25",
+        "inspectionCompletedDate": "2026-04-28",
+        "approvedAmountBaht": 2793000,
+        "penaltyDays": 0,
+        "penaltyPerDayBaht": 0,
+        "totalPenaltyBaht": 0,
+        "netPayableBaht": 2793000,
+        "isPartialAcceptance": false,
+        "copyType": "FINANCE_DISBURSEMENT",
+        "disbursementPayloadPrepared": true,
+        "signers": [
+          { "fullName": "นางสาวจีระภา บุญรัตน์", "position": "ผู้ตรวจราชการกระทรวงแรงงาน / MCIO", "committeeRole": "ประธานกรรมการตรวจรับพัสดุ", "signedAt": "2026-04-28T16:00:00+07:00" },
+          { "fullName": "มานะ มีสุข", "position": "นักวิชาการคอมพิวเตอร์ชำนาญการพิเศษ", "committeeRole": "กรรมการตรวจรับพัสดุ", "signedAt": "2026-04-28T16:15:00+07:00" },
+          { "fullName": "มานี เจริญรุ่ง", "position": "นักวิชาการคอมพิวเตอร์ชำนาญการ", "committeeRole": "กรรมการตรวจรับพัสดุ", "signedAt": "2026-04-28T16:20:00+07:00" },
+          { "fullName": "สมศักดิ์ สว่างวงศ์", "position": "นักวิชาการแรงงานชำนาญการพิเศษ", "committeeRole": "กรรมการและเลขานุการ", "signedAt": "2026-04-28T16:30:00+07:00" }
+        ]
+      },
+      {
+        "id": "CERT-MLS1-CONTRACTOR",
+        "certificateNo": "บร.๐๑/๒๕๖๙",
+        "issueDate": "2026-04-28",
+        "contractNo": "รง. ๑๔/๒๕๖๙",
+        "projectNameTh": "โครงการพัฒนาระบบบริการดิจิทัลกลาง สป.รง. (MOL Single Window)",
+        "contractorName": "บริษัท ดิจิทัล โซลูชั่นส์ อินโนเวชั่น จำกัด (มหาชน)",
+        "milestoneNo": 1,
+        "milestoneTitleTh": "งวดที่ ๑: แผนและพิมพ์เขียวระบบ",
+        "deliveredDate": "2026-04-25",
+        "inspectionCompletedDate": "2026-04-28",
+        "approvedAmountBaht": 2793000,
+        "penaltyDays": 0,
+        "penaltyPerDayBaht": 0,
+        "totalPenaltyBaht": 0,
+        "netPayableBaht": 2793000,
+        "isPartialAcceptance": false,
+        "copyType": "CONTRACTOR_COPY",
+        "disbursementPayloadPrepared": false,
+        "signers": [
+          { "fullName": "นางสาวจีระภา บุญรัตน์", "position": "ผู้ตรวจราชการกระทรวงแรงงาน / MCIO", "committeeRole": "ประธานกรรมการตรวจรับพัสดุ", "signedAt": "2026-04-28T16:00:00+07:00" },
+          { "fullName": "มานะ มีสุข", "position": "นักวิชาการคอมพิวเตอร์ชำนาญการพิเศษ", "committeeRole": "กรรมการตรวจรับพัสดุ", "signedAt": "2026-04-28T16:15:00+07:00" },
+          { "fullName": "มานี เจริญรุ่ง", "position": "นักวิชาการคอมพิวเตอร์ชำนาญการ", "committeeRole": "กรรมการตรวจรับพัสดุ", "signedAt": "2026-04-28T16:20:00+07:00" },
+          { "fullName": "สมศักดิ์ สว่างวงศ์", "position": "นักวิชาการแรงงานชำนาญการพิเศษ", "committeeRole": "กรรมการและเลขานุการ", "signedAt": "2026-04-28T16:30:00+07:00" }
+        ]
+      }
+    ]
+  },
+  "PRJ-2569-0012": {
+    "projectId": "PRJ-2569-0012",
+    "projectNo": "MOL-2569-012",
+    "projectNameTh": "โครงการพัฒนาระบบศูนย์ข้อมูลแรงงานอัจฉริยะ (Smart Labour Big Data Platform)",
+    "fiscalYear": 2569,
+    "budgetBaht": 28000000,
+    "procurementMethod": "E_BIDDING",
+    "currentPhase": "TOR_PRICE",
+    "activeMilestoneNo": 1,
+    "totalMilestones": 4,
+    "rules": [
+      {
+        "id": "RULE-STAT-01-012",
+        "category": "STATUTORY",
+        "nameTh": "ระยะเวลาการพิจารณาผลการประกวดราคาอิเล็กทรอนิกส์ (e-Bidding)",
+        "legalReference": "ระเบียบกระทรวงการคลังว่าด้วยการจัดซื้อจัดจ้างฯ พ.ศ. ๒๕๖๐ ข้อ ๕๕",
+        "durationDays": 7,
+        "isBusinessDays": true,
+        "canBeEditedByOrder": true,
+        "lastReviewedDate": "2026-02-01",
+        "notesTh": "กรอบเวลามาตรฐาน ๗ วันทำการ"
+      },
+      {
+        "id": "RULE-STAT-02-012",
+        "category": "STATUTORY",
+        "nameTh": "การแจ้งผู้รับจ้างกรณีส่งมอบพัสดุไม่ถูกต้องหรือไม่ครบถ้วน (๓ วันทำการ)",
+        "legalReference": "ระเบียบกระทรวงการคลังว่าด้วยการจัดซื้อจัดจ้างฯ พ.ศ. ๒๕๖๐ ข้อ ๑๗๕ วรรคสาม",
+        "durationDays": 3,
+        "isBusinessDays": true,
+        "canBeEditedByOrder": false,
+        "lastReviewedDate": "2026-02-01",
+        "notesTh": "บังคับใช้ตามกฎหมาย"
+      }
+    ],
+    "slaPauses": [],
+    "torPriceCommittee": {
+      "id": "COMM-TOR-012",
+      "projectId": "PRJ-2569-0012",
+      "committeeType": "TOR_PRICE",
+      "orderNumber": "คำสั่ง สป.รง. ที่ ๕๔/๒๕๖๙",
+      "orderDate": "2026-02-01",
+      "startDate": "2026-02-01",
+      "targetEndDate": "2026-02-25",
+      "allowedDays": 25,
+      "isBusinessDays": false,
+      "headOfAgencyApproval": true,
+      "approvedBy": "พันตำรวจโท วรรณพงษ์ คชรักษ์",
+      "approvedPosition": "ปลัดกระทรวงแรงงาน",
+      "members": [
+        {
+          "id": "MEM-TOR-12-01",
+          "userId": "USR-001",
+          "fullName": "สมชาย รักชาติ",
+          "position": "นักวิชาการคอมพิวเตอร์เชี่ยวชาญ / ผอ.ศสช.",
+          "department": "ศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร",
+          "committeeRole": "CHAIR",
+          "appointedDate": "2026-02-01",
+          "conflictDeclared": true,
+          "conflictDeclaredAt": "2026-02-01T09:00:00+07:00"
+        },
+        {
+          "id": "MEM-TOR-12-02",
+          "userId": "USR-008",
+          "fullName": "วิชัย มณีรัตน์",
+          "position": "นักวิชาการแรงงานชำนาญการพิเศษ / ผู้อำนวยการศูนย์วิจัยและนวัตกรรมแรงงาน",
+          "department": "กองเศรษฐกิจการแรงงาน",
+          "committeeRole": "MEMBER",
+          "appointedDate": "2026-02-01",
+          "conflictDeclared": true,
+          "conflictDeclaredAt": "2026-02-01T09:30:00+07:00"
+        },
+        {
+          "id": "MEM-TOR-12-03",
+          "userId": "USR-004",
+          "fullName": "มานี เจริญรุ่ง",
+          "position": "นักวิชาการคอมพิวเตอร์ชำนาญการ / เจ้าหน้าที่ตรวจสอบระบบและสถาปัตยกรรมดิจิทัล",
+          "department": "ศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร",
+          "committeeRole": "SECRETARY",
+          "appointedDate": "2026-02-01",
+          "conflictDeclared": true,
+          "conflictDeclaredAt": "2026-02-01T10:00:00+07:00"
+        }
+      ],
+      "attachments": []
+    },
+    "torSpecification": {
+      "id": "TOR-PRJ-2569-0012",
+      "projectId": "PRJ-2569-0012",
+      "version": 1,
+      "status": "LINTER_REVIEW",
+      "sections": [
+        {
+          "key": "OBJECTIVES",
+          "titleTh": "๑. วัตถุประสงค์และผลสัมฤทธิ์ของโครงการ",
+          "items": [
+            {
+              "id": "TOR-REQ-12-1.1",
+              "reqCode": "TOR-REQ-1.1",
+              "section": "OBJECTIVES",
+              "titleTh": "การรวบรวมและประมวลผลข้อมูลตลาดแรงงานขนาดใหญ่ (Labour Data Lake)",
+              "specificationTh": "พัฒนาระบบคลังข้อมูลขนาดใหญ่ เชื่อมต่อข้อมูล ๕ กรมในสังกัดกระทรวงแรงงาน ทำงานได้อย่างรวดเร็วและใช้งานง่าย",
+              "acceptanceCriteriaTh": "สามารถนำเข้าและเชื่อมโยงข้อมูลแรงงานจาก ๕ กรมได้วันละไม่น้อยกว่า ๑,๐๐๐,๐๐๐ ระเบียน พร้อม Data Catalog",
+              "testMethod": "AUTOMATED_TEST",
+              "evidenceRequiredTh": "รายงานผลการทดสอบการถ่ายโอนข้อมูล ETL และแบบประเมิน Data Governance",
+              "responsibleRole": "คณะกรรมการจัดทำ TOR ร่วมกับ ศสช.",
+              "passFailThresholdTh": "ความถูกต้องของการถ่ายโอนข้อมูลร้อยละ ๙๙.๙๙",
+              "ambiguityWarnings": [
+                {
+                  "keyword": "รวดเร็ว",
+                  "contextSnippet": "...ข้อมูล ๕ กรมในสังกัดกระทรวงแรงงาน ทำงานได้อย่างรวดเร็วและใช้งานง่าย...",
+                  "suggestedMeasurementTh": "ระบุเกณฑ์เวลาการประมวลผล เช่น Batch Processing ไม่เกิน ๔ ชั่วโมง",
+                  "severity": "CRITICAL"
+                },
+                {
+                  "keyword": "ใช้งานง่าย",
+                  "contextSnippet": "...ทำงานได้อย่างรวดเร็วและใช้งานง่าย...",
+                  "suggestedMeasurementTh": "ระบุเกณฑ์ Usability Test เช่น ผู้ใช้สร้างรายงาน BI ได้เองภายใน ๑๕ นาที",
+                  "severity": "WARNING"
+                }
+              ],
+              "createdAt": "2026-02-05T10:00:00+07:00",
+              "updatedAt": "2026-02-05T10:00:00+07:00"
+            }
+          ]
+        },
+        {
+          "key": "SPECS_STANDARDS_SECURITY",
+          "titleTh": "๓. รายการคุณลักษณะ มาตรฐาน และความมั่นคงปลอดภัยไซเบอร์",
+          "items": [
+            {
+              "id": "TOR-REQ-12-3.1",
+              "reqCode": "TOR-REQ-3.1",
+              "section": "SPECS_STANDARDS_SECURITY",
+              "titleTh": "สถาปัตยกรรมคลาวด์และการคุ้มครองข้อมูลส่วนบุคคล (PDPA)",
+              "specificationTh": "ติดตั้งระบบบนคลาวด์กลางภาครัฐ GDCC มีระบบ Data Masking และการเข้ารหัสข้อมูลสำคัญตามมาตรฐาน PDPA",
+              "acceptanceCriteriaTh": "ข้อมูลระบุตัวบุคคล (PII) ทุกรายการต้องเข้ารหัส AES-256 ในระดับ Rest และ TLS 1.3 ในระดับ Transit",
+              "testMethod": "SECURITY_SCAN",
+              "evidenceRequiredTh": "รายงานผลการประเมินผลกระทบด้านการคุ้มครองข้อมูลส่วนบุคคล (DPIA) และผลตรวจ VAPT",
+              "responsibleRole": "เจ้าหน้าที่คุ้มครองข้อมูลส่วนบุคคล (DPO) สป.รง.",
+              "passFailThresholdTh": "ไม่มีข้อตรวจพบช่องโหว่ความเสี่ยงสูงด้าน PDPA",
+              "createdAt": "2026-02-05T10:00:00+07:00",
+              "updatedAt": "2026-02-05T10:00:00+07:00"
+            }
+          ]
+        }
+      ]
+    },
+    "medianPricePackage": {
+      "id": "MP-PRJ-2569-0012",
+      "projectId": "PRJ-2569-0012",
+      "medianPriceBaht": 27500000,
+      "calculationMethodTh": "ใช้ค่ามัธยฐานของราคาสำรวจจากผู้ประกอบการ ๓ ราย",
+      "minSurveyedBaht": 26800000,
+      "maxSurveyedBaht": 28400000,
+      "medianSurveyedBaht": 27500000,
+      "certifiedBy": "สมชาย รักชาติ",
+      "certifiedPosition": "ประธานคณะกรรมการกำหนดราคากลาง",
+      "certifiedDate": "2026-02-12",
+      "announcementDate": "2026-02-13",
+      "surveys": [
+        {
+          "id": "SRV-12-01",
+          "sourceName": "บริษัท บิ๊กดาต้า อินไซท์ แพลตฟอร์ม จำกัด",
+          "sourceType": "MARKET_SURVEY",
+          "documentRefOrUrl": "ใบเสนอราคาเลขที่ BDI-2026-042 ลงวันที่ ๐๘ ก.พ. ๒๕๖๙",
+          "surveyDate": "2026-02-08",
+          "surveyorName": "มานี เจริญรุ่ง",
+          "surveyorPosition": "นักวิชาการคอมพิวเตอร์ชำนาญการ",
+          "quotedPriceBaht": 28400000,
+          "specEquivalence": "IDENTICAL",
+          "specComparisonNotesTh": "ตรงตามขอบเขตงาน Data Lake และ BI Dashboard",
+          "isExcludedAsOutlier": false
+        },
+        {
+          "id": "SRV-12-02",
+          "sourceName": "บริษัท ดาต้า อะนาลิติกส์ คลาวด์ ซิสเต็มส์ จำกัด",
+          "sourceType": "MARKET_SURVEY",
+          "documentRefOrUrl": "ใบเสนอราคาเลขที่ DACS-MOL-01 ลงวันที่ ๑๐ ก.พ. ๒๕๖๙",
+          "surveyDate": "2026-02-10",
+          "surveyorName": "มานี เจริญรุ่ง",
+          "surveyorPosition": "นักวิชาการคอมพิวเตอร์ชำนาญการ",
+          "quotedPriceBaht": 27500000,
+          "specEquivalence": "EQUIVALENT",
+          "specComparisonNotesTh": "คุณลักษณะเทียบเท่า โดยใช้ Open-Source Data Stack ระดับองค์กร",
+          "isExcludedAsOutlier": false
+        },
+        {
+          "id": "SRV-12-03",
+          "sourceName": "บริษัท ไทยไอที คอนซอร์เซียม จำกัด",
+          "sourceType": "MARKET_SURVEY",
+          "documentRefOrUrl": "ใบเสนอราคาเลขที่ TIC-69-02 ลงวันที่ ๑๑ ก.พ. ๒๕๖๙",
+          "surveyDate": "2026-02-11",
+          "surveyorName": "วิชัย มณีรัตน์",
+          "surveyorPosition": "นักวิชาการแรงงานชำนาญการพิเศษ",
+          "quotedPriceBaht": 26800000,
+          "specEquivalence": "EQUIVALENT",
+          "specComparisonNotesTh": "คุณลักษณะเทียบเท่าตามข้อกำหนด",
+          "isExcludedAsOutlier": false
+        }
+      ]
+    },
+    "rtmMatrix": [],
+    "digitalChecklist": [],
+    "defects": [],
+    "notices175": [],
+    "certificates": []
+  }
+}

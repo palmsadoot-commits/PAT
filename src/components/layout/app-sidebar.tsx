@@ -19,7 +19,8 @@ import {
   ChevronLeft,
   ChevronRight,
   X,
-  ShieldCheck
+  ShieldCheck,
+  Scale
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -58,6 +59,7 @@ const NAV_SECTIONS: NavSection[] = [
     items: [
       { name: 'คิวตรวจสอบ', path: '/review', icon: ClipboardCheck, roles: ['SUPER_ADMIN', 'ADMIN', 'REVIEWER', 'OFFICER'] },
       { name: 'คิวอนุมัติ', path: '/approval', icon: CheckCircle2, roles: ['SUPER_ADMIN', 'ADMIN', 'APPROVER', 'EXECUTIVE'] },
+      { name: 'จัดซื้อจัดจ้างและตรวจรับ', path: '/procurement', icon: Scale },
       { name: 'ภาระงานและทรัพยากร', path: '/workload', icon: Users2 },
       { name: 'กำกับดูแล DPM', path: '/governance', icon: ShieldCheck },
     ],

@@ -9,3 +9,4 @@ export * from './organization';
 export * from './sla';
 export * from './dashboard';
 export * from './dpm';
+export * from './procurement';
